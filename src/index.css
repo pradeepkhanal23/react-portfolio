@@ -9,35 +9,23 @@
 
 /* Custom CSS for the bubble animation */
 @keyframes bubble-motion {
-  0%,
-  25% {
-    border-top-left-radius: 50%;
-    border-top-right-radius: 45%;
-    border-bottom-left-radius: 45%;
-    border-bottom-right-radius: 55%;
-  }
-  50% {
-    border-top-left-radius: 45%;
+  0% {
+    border-top-left-radius: 60%;
     border-top-right-radius: 55%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 45%;
-  }
-  75% {
-    border-top-left-radius: 45%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-bottom-left-radius: 40%;
     border-bottom-right-radius: 55%;
   }
+
   100% {
-    border-top-left-radius: 45%;
-    border-top-right-radius: 55%;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 45%;
+    border-top-left-radius: 55%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
   }
 }
 
 .bubble-image {
-  animation: bubble-motion 8s infinite ease-out alternate;
+  animation: bubble-motion 2s infinite ease-in-out alternate;
 }
 
 @layer base {
@@ -82,6 +70,6 @@
   }
 
   .hero-image {
-    @apply rounded-full object-cover border-gray-200 border-4 p-1 lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
+    @apply rounded-full object-cover border-gray-800 border-opacity-75 border-4  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
   }
 }
