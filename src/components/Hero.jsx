@@ -1,32 +1,33 @@
 import { CiInstagram, CiFacebook } from "react-icons/ci";
 import { RiGithubLine } from "react-icons/ri";
+import { PiPaperPlaneTiltBold, PiMouseSimpleLight } from "react-icons/pi";
+
+import { FiArrowDown } from "react-icons/fi";
 import ProfileImage from "../assets/profile-picture.png";
 
 const Hero = () => {
   return (
     <>
-      <section className="hero-section">
-        <div className="flex items-center space-x-5">
-          {/* Social Icons */}
-          <div className="hero-social-icons ">
-            <a href="#">
-              <CiInstagram className="text-3xl" />
-            </a>
-            <a href="#">
-              <CiFacebook className="text-3xl" />
-            </a>
-            <a href="#">
-              <RiGithubLine className="text-3xl" />
-            </a>
-          </div>
-
-          {/* Hero Image Section */}
-          <img
-            className="hero-image "
-            src={ProfileImage}
-            alt="Pradeep Khanal Profile Image"
-          />
+      <section className="hero-section lg:mt-10">
+        {/* Social Icons */}
+        <div className="hero-social-icons ">
+          <a href="#">
+            <CiInstagram className="text-3xl lg:text-4xl" />
+          </a>
+          <a href="#">
+            <CiFacebook className="text-3xl lg:text-4xl" />
+          </a>
+          <a href="#">
+            <RiGithubLine className="text-3xl lg:text-4xl" />
+          </a>
         </div>
+
+        {/* Hero Image Section */}
+        <img
+          className="hero-image bubble-image"
+          src={ProfileImage}
+          alt="Pradeep Khanal Profile Image"
+        />
 
         {/* Hero Text Section */}
         <div className="hero-text  mt-5 ">
@@ -39,12 +40,18 @@ const Hero = () => {
           </div>
           <p className="text-lg">
             Front-end web developer with a background in Computer Engineering to
-            blend the artistic mind with creativity.
+            blend the artistic mind with creativity. Strengths in innovation,
+            problem solving, teamwork, and building projects from ideation to
+            execution with a pixel perfect mindset.
           </p>
-          <button className="hero-button">Say Hello</button>
-          <a href="#next-section" className="scroll-button">
+          <button className="hero-button">
+            Say Hello <PiPaperPlaneTiltBold />
+          </button>
+          <div className="scroll-button pt-10">
+            <PiMouseSimpleLight className="text-3xl" />
             Scroll Down
-          </a>
+            <FiArrowDown className="animate-bounce text-xl" />
+          </div>
         </div>
       </section>
     </>
