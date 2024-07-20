@@ -75,7 +75,7 @@
   }
 
   .hero-image {
-    @apply rounded-full object-cover border-slate-400 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
+    @apply rounded-full object-cover border-purple-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
   }
 }
 
@@ -97,7 +97,7 @@
     @apply flex-1 flex items-center justify-center w-full;
   }
   .about-image {
-    @apply mt-5 mb-5 rounded-2xl shadow-md  h-80 w-80 object-cover;
+    @apply mt-5 mb-5 rounded-2xl drop-shadow-md  h-80 w-80 object-cover;
   }
   .about-content {
     @apply flex-1;
@@ -123,5 +123,42 @@
   }
   .about-resume-button {
     @apply py-2 px-3 bg-black text-white rounded-md inline-flex items-center gap-3;
+  }
+}
+
+/* Skills Section */
+
+@layer components {
+  .skills-section {
+    @apply p-5 max-w-5xl mx-auto  flex flex-col gap-y-5 mt-5;
+  }
+
+  .skill-title {
+    @apply text-center text-4xl font-bold;
+  }
+
+  .skill-subtitle {
+    @apply text-center text-xl;
+  }
+
+  .skill-container {
+    @apply flex flex-col md:flex-row gap-5 mt-10;
+  }
+
+  .skill-frontend,
+  .skill-backend {
+    @apply w-full;
+  }
+
+  .skill-card {
+    @apply bg-white p-5 w-80 mx-auto rounded-xl flex flex-col items-center drop-shadow-md;
+  }
+
+  .skill-card-header {
+    @apply font-bold mb-5 text-xl tracking-wide;
+  }
+
+  .skill-card-body {
+    @apply flex items-center w-full justify-center gap-x-10;
   }
 }

@@ -30,12 +30,10 @@ const Hero = () => {
 
         {/* Hero Text Section */}
         <div className="hero-text  mt-5 ">
-          <h1 className="text-4xl font-bold font-['Figtree']">
-            Pradeep Khanal
-          </h1>
+          <h1 className="text-4xl font-bold ">Pradeep Khanal</h1>
           <div className="flex items-center space-x-4">
             <hr className="w-10 h-[.12rem] bg-gray-400" />
-            <h2 className="text-xl ">Frontend Developer</h2>
+            <h2 className="text-xl">Frontend Developer</h2>
           </div>
           <p className="text-md">
             Front-end web developer with a background in Computer Engineering to
