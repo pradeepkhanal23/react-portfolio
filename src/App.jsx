@@ -12,7 +12,7 @@ import {
 
 const App = () => {
   return (
-    <main className="flex flex-col bg-[#fffffff0] text-[#333]">
+    <main className="flex flex-col">
       <Navbar />
       <Hero />
       <About />

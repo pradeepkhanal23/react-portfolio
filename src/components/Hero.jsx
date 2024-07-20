@@ -1,7 +1,6 @@
 import { CiInstagram, CiFacebook } from "react-icons/ci";
 import { RiGithubLine } from "react-icons/ri";
 import { PiPaperPlaneTiltBold, PiMouseSimpleLight } from "react-icons/pi";
-
 import { FiArrowDown } from "react-icons/fi";
 import ProfileImage from "../assets/profile-picture.png";
 
