@@ -12,8 +12,8 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="pb-6  lg:pb-0">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <header className="pb-6 lg:pb-0 ">
+        <div className="px-4 mx-auto  sm:px-6 lg:px-8">
           <nav className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <a
@@ -50,7 +50,11 @@ const Navbar = () => {
 
           {isNavOpen && (
             <>
-              <nav className=" p-3 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+              <aside
+                className={`p-3 bg-white border  border-gray-200 rounded-md shadow-md lg:hidden 
+               
+                `}
+              >
                 <div className="flex items-start justify-between">
                   <ul className=" flex-col px-6 -my-2 space-y-3">
                     {[
@@ -79,7 +83,7 @@ const Navbar = () => {
                     onClick={handleNavToggle}
                   />
                 </div>
-              </nav>
+              </aside>
             </>
           )}
         </div>

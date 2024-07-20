@@ -7,7 +7,7 @@ import ProfileImage from "../assets/profile-picture.png";
 const Hero = () => {
   return (
     <>
-      <section className="hero-section lg:mt-10">
+      <section className="hero-section mt-5 ">
         {/* Social Icons */}
         <div className="hero-social-icons ">
           <a href="#">
@@ -37,7 +37,7 @@ const Hero = () => {
             <hr className="w-10 h-[.12rem] bg-gray-400" />
             <h2 className="text-xl ">Frontend Developer</h2>
           </div>
-          <p className="text-lg">
+          <p className="text-md">
             Front-end web developer with a background in Computer Engineering to
             blend the artistic mind with creativity. Strengths in innovation,
             problem solving, teamwork, and building projects from ideation to
