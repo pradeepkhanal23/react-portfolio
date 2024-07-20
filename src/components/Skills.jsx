@@ -25,7 +25,7 @@ const Skills = () => {
                           <RiCheckboxCircleFill />
                           <h4 className="font-bold">{name}</h4>
                         </div>
-                        <p className="text-gray-500 text-sm">{level}</p>
+                        <p className="subtle">{level}</p>
                       </div>
                     );
                   })}
@@ -40,7 +40,7 @@ const Skills = () => {
                           <RiCheckboxCircleFill />
                           <h4 className="font-bold">{name}</h4>
                         </div>
-                        <p className="text-gray-500 text-sm">{level}</p>
+                        <p className="subtle">{level}</p>
                       </div>
                     );
                   })}
@@ -63,7 +63,7 @@ const Skills = () => {
                           <RiCheckboxCircleFill />
                           <h4 className="font-bold">{name}</h4>
                         </div>
-                        <p className="text-gray-500 text-sm">{level}</p>
+                        <p className="subtle">{level}</p>
                       </div>
                     );
                   })}
@@ -78,7 +78,7 @@ const Skills = () => {
                           <RiCheckboxCircleFill />
                           <h4 className="font-bold">{name}</h4>
                         </div>
-                        <p className="text-gray-500 text-sm">{level}</p>
+                        <p className="subtle">{level}</p>
                       </div>
                     );
                   })}

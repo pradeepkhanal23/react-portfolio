@@ -1,6 +1,26 @@
 import { SlBadge } from "react-icons/sl";
 import { AiOutlineFileDone } from "react-icons/ai";
 import { BiSupport } from "react-icons/bi";
+import { CiInstagram, CiFacebook } from "react-icons/ci";
+import { RiGithubLine } from "react-icons/ri";
+
+export const socialMedia = [
+  {
+    id: 1,
+    icon: <CiInstagram />,
+    linkPath: "https://www.instagram.com",
+  },
+  {
+    id: 2,
+    icon: <CiFacebook />,
+    linkPath: "https://www.facebook.com",
+  },
+  {
+    id: 3,
+    icon: <RiGithubLine />,
+    linkPath: "https://www.github.com/pradeepkhanal23",
+  },
+];
 
 export const cards = [
   {

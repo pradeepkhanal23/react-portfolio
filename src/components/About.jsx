@@ -5,9 +5,9 @@ import { cards } from "../utils/helpers";
 const About = () => {
   return (
     <>
-      <section className="about-section">
-        <h2 className="about-title">About Me</h2>
-        <p className="about-subtitle">My introduction</p>
+      <section className="p-5 mx-auto max-w-5xl flex flex-col gap-y-4">
+        <h2 className="title text-center">About Me</h2>
+        <p className="subtitle text-center">My introduction</p>
         <div className="about-container">
           <div className="about-image-wrapper">
             <img
@@ -22,15 +22,15 @@ const About = () => {
                 const { id, icon, title, info } = card;
                 return (
                   <article className="about-card" key={id}>
-                    {icon}
-                    <h4 className="about-card-title">{title}</h4>
-                    <p className="about-card-info">{info}</p>
+                    <span className="text-2xl">{icon}</span>
+                    <h4 className="para">{title}</h4>
+                    <p className="subtle">{info}</p>
                   </article>
                 );
               })}
             </div>
-            <div className="about-info">
-              <p className="about-description">
+            <div className="mt-5">
+              <p className="para">
                 As a driven and tech-savvy web developer, I have always had a
                 strong gravitational pull toward technology. I am currently
                 pursuing an intensive full stack web development coding
@@ -38,7 +38,7 @@ const About = () => {
               </p>
             </div>
             <div className="about-resume-button-wrapper">
-              <button className="about-resume-button">
+              <button className="btn">
                 Download CV
                 <SlDocs className="text-xl" />
               </button>

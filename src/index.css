@@ -24,6 +24,29 @@
   }
 }
 
+/* Custom utility css */
+@layer components {
+  .title {
+    @apply text-4xl font-bold;
+  }
+
+  .subtitle {
+    @apply text-xl;
+  }
+
+  .btn {
+    @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:bg-gray-700 focus:bg-gray-700;
+  }
+
+  .subtle {
+    @apply text-gray-500 tracking-wide text-sm;
+  }
+
+  .para {
+    @apply text-black tracking-normal text-base;
+  }
+}
+
 .bubble-image {
   animation: bubble-motion 2s infinite ease-in-out alternate;
 }
@@ -66,10 +89,6 @@
     @apply flex flex-col space-y-4 mr-4;
   }
 
-  .hero-button {
-    @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:bg-gray-700 focus:bg-gray-700;
-  }
-
   .scroll-button {
     @apply mt-6 text-black text-base hidden lg:flex lg:items-center gap-x-2;
   }
@@ -81,15 +100,6 @@
 
 /* About Section */
 @layer components {
-  .about-section {
-    @apply p-5 mx-auto max-w-5xl flex flex-col gap-y-4;
-  }
-  .about-title {
-    @apply text-center text-4xl font-bold;
-  }
-  .about-subtitle {
-    @apply text-center text-xl;
-  }
   .about-container {
     @apply flex flex-col md:flex-row items-center md:gap-x-5 lg:mt-10;
   }
@@ -108,21 +118,9 @@
   .about-card {
     @apply border-gray-200 bg-white rounded-md border-2 p-3 flex flex-1 flex-col items-center gap-y-2 text-nowrap;
   }
-  .about-card-title {
-    @apply font-bold;
-  }
-  .about-card-info {
-    @apply text-gray-500 tracking-tight text-sm;
-  }
-  .about-info {
-    @apply mt-5;
-  }
 
   .about-resume-button-wrapper {
     @apply text-center mt-5 md:text-left;
-  }
-  .about-resume-button {
-    @apply py-2 px-3 bg-black text-white rounded-md inline-flex items-center gap-3;
   }
 }
 
