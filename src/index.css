@@ -27,15 +27,15 @@
 /* Custom utility css */
 @layer components {
   .title {
-    @apply text-4xl font-bold;
+    @apply text-3xl font-bold;
   }
 
   .subtitle {
-    @apply text-xl;
+    @apply text-lg;
   }
 
   .btn {
-    @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:bg-gray-700 focus:bg-gray-700;
+    @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:bg-gray-500 focus:bg-gray-500;
   }
 
   .subtle {
@@ -94,7 +94,7 @@
   }
 
   .hero-image {
-    @apply rounded-full object-cover border-purple-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
+    @apply rounded-full drop-shadow-xl object-cover border-purple-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
   }
 }
 
@@ -116,7 +116,7 @@
     @apply flex flex-row gap-3 flex-wrap items-center justify-center md:flex-nowrap;
   }
   .about-card {
-    @apply border-gray-200 bg-white rounded-md border-2 p-3 flex flex-1 flex-col items-center gap-y-2 text-nowrap;
+    @apply border-gray-300 bg-white rounded-md border-2 p-3 flex flex-1 flex-col items-center gap-y-2 text-nowrap;
   }
 
   .about-resume-button-wrapper {
@@ -127,18 +127,6 @@
 /* Skills Section */
 
 @layer components {
-  .skills-section {
-    @apply p-5 max-w-5xl mx-auto  flex flex-col gap-y-5 mt-5;
-  }
-
-  .skill-title {
-    @apply text-center text-4xl font-bold;
-  }
-
-  .skill-subtitle {
-    @apply text-center text-xl;
-  }
-
   .skill-container {
     @apply flex flex-col md:flex-row gap-5 mt-10;
   }
@@ -149,7 +137,7 @@
   }
 
   .skill-card {
-    @apply bg-white p-5 w-80 mx-auto rounded-xl flex flex-col items-center drop-shadow-md;
+    @apply bg-white p-5 w-80 mx-auto rounded-xl flex flex-col items-center drop-shadow-md border border-gray-200;
   }
 
   .skill-card-header {

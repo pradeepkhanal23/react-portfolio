@@ -21,7 +21,7 @@ const Hero = () => {
 
         {/* Hero Image Section */}
         <img
-          className="hero-image bubble-image"
+          className="hero-image bubble-image "
           src={ProfileImage}
           alt="Pradeep Khanal Profile Image"
         />

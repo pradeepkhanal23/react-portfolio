@@ -23,7 +23,7 @@ const About = () => {
                 return (
                   <article className="about-card" key={id}>
                     <span className="text-2xl">{icon}</span>
-                    <h4 className="para">{title}</h4>
+                    <h4 className="para font-semibold">{title}</h4>
                     <p className="subtle">{info}</p>
                   </article>
                 );
