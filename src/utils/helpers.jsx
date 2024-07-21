@@ -154,3 +154,42 @@ export const services = [
     ],
   },
 ];
+
+export const qualifications = {
+  experience: [
+    {
+      id: 1,
+      title: "Frontend Developer (Freelance)",
+      date: "2022 - Current",
+      description:
+        "Developed and maintained web applications, improved user interfaces, and implemented new features using modern web technologies.",
+    },
+    {
+      id: 2,
+      title: "Junior Web Developer (G & D Developers) | Remote",
+      date: "Jan 2023 - August 2023",
+      description:
+        "Worked on building responsive web pages, collaborated with designers and backend developers.",
+    },
+  ],
+  education: [
+    {
+      id: 1,
+      title: "Certification in Full Stack Web Development Course",
+      institution: "University of Sydney (Australia)",
+      date: "Feb 2024- Aug 2024 (expected)",
+      description:
+        "Studied intensive full stack web development course alongside 20+ hands-on and real world projects. Comprehensive practice with both frontend and backend technologies",
+      person: null,
+    },
+    {
+      id: 2,
+      title: "Bachelor's Degree in Computer Engineering",
+      institution: "Tribhuvan University (Kathmandu,Nepal)",
+      date: "2013 - 2017",
+      description:
+        "Relevant course work DSA, Operating system, Database management system(DBMS), Programming, Computer networks, Human-computer iteraction",
+      person: null,
+    },
+  ],
+};
