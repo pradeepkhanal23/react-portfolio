@@ -6,6 +6,9 @@ import { RiGithubLine } from "react-icons/ri";
 import { CgWebsite } from "react-icons/cg";
 import { FaRegFileCode } from "react-icons/fa6";
 import { GoStack } from "react-icons/go";
+import ProjectImage1 from "../assets/screenshots/aqua-pro.png";
+import ProjectImage2 from "../assets/screenshots/qilo.png";
+import ProjectImage3 from "../assets/screenshots/splitter.png";
 
 export const socialMedia = [
   {
@@ -193,3 +196,35 @@ export const qualifications = {
     },
   ],
 };
+
+export const projects = [
+  {
+    id: 1,
+    title: "Aqua Pro",
+    category: ["Desktop", "Web App", "All"],
+    imageUrl: ProjectImage1,
+    demoLink: "https://aqua-pro.netlify.app/",
+    projectDescription:
+      "Landing page for a plumbing service company.This project is part of my take home assignment.",
+  },
+  {
+    id: 2,
+    title: "Qilo",
+    category: ["Desktop", "Web App", "All"],
+    imageUrl: ProjectImage2,
+    demoLink: "https://qilo.netlify.app/",
+    projectDescription:
+      "This application is designed to help users track their daily calorie intake and maintain a healthy lifestyle.",
+  },
+  {
+    id: 3,
+    title: "Splitter",
+    category: ["React", "All"],
+    imageUrl: ProjectImage3,
+    demoLink: "https://qilo.netlify.app/",
+    projectDescription:
+      "React app from frontend mentor for splitting the bill and calculating the tips",
+  },
+];
+
+export const portfolioTags = ["All", "React", "Web App", "Desktop"];

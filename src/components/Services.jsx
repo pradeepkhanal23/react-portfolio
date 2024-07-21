@@ -47,7 +47,7 @@ const Services = () => {
                 >
                   View More
                   <span>
-                    <FaArrowRightLong className="text-xs" />
+                    <FaArrowRightLong className="animate-bounceRight " />
                   </span>
                 </button>
               </div>

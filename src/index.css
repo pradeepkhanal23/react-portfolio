@@ -24,6 +24,10 @@
   }
 }
 
+.bubble-image {
+  animation: bubble-motion 2s infinite ease-in-out alternate;
+}
+
 /* Custom utility css */
 @layer components {
   .title {
@@ -35,7 +39,7 @@
   }
 
   .btn {
-    @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:bg-gray-500 focus:bg-gray-500;
+    @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:scale-[1.05];
   }
 
   .subtle {
@@ -45,10 +49,6 @@
   .para {
     @apply text-black tracking-normal text-base;
   }
-}
-
-.bubble-image {
-  animation: bubble-motion 2s infinite ease-in-out alternate;
 }
 
 @layer base {
@@ -94,7 +94,7 @@
   }
 
   .hero-image {
-    @apply rounded-full drop-shadow-xl object-cover border-purple-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
+    @apply rounded-full drop-shadow-xl object-cover border-gray-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
   }
 }
 
