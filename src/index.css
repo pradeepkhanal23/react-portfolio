@@ -7,6 +7,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: "Urbanist", "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  /* font-size: 110%; */
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
 /* Custom CSS for the bubble animation */
 @keyframes bubble-motion {
   0% {
@@ -29,122 +40,98 @@
 }
 
 /* Custom utility css */
-@layer components {
-  .title {
-    @apply text-3xl font-bold;
-  }
-
-  .subtitle {
-    @apply text-lg;
-  }
-
-  .btn {
-    @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:scale-[1.05];
-  }
-
-  .subtle {
-    @apply text-gray-500 tracking-wide text-sm;
-  }
-
-  .para {
-    @apply text-black tracking-normal text-base;
-  }
+.title {
+  @apply text-3xl font-bold;
 }
 
-@layer base {
-  html {
-    font-family: "Urbanist", "Figtree", sans-serif;
-    font-optical-sizing: auto;
-    /* font-size: 110%; */
-  }
+.subtitle {
+  @apply text-lg;
+}
 
-  body {
-    background: #f5f5f5;
-    color: #333;
-  }
+.btn {
+  @apply transition-all duration-200 inline-flex gap-3 items-center px-4 py-2 text-white bg-black rounded-md hover:scale-[1.05];
+}
+
+.subtle {
+  @apply text-gray-500 tracking-wide text-sm;
+}
+
+.para {
+  @apply text-black tracking-normal text-base;
 }
 
 /* Navbar section */
-@layer components {
-  .navlinks {
-    @apply text-base font-medium transition-all duration-200 hover:text-blue-600 focus:text-blue-600;
-  }
+.navlinks {
+  @apply text-base font-medium transition-all duration-200 hover:text-blue-600 focus:text-blue-600;
+}
 
-  .brand-name {
-    font-family: "DynaPuff", system-ui;
-  }
+.brand-name {
+  font-family: "DynaPuff", system-ui;
 }
 
 /* Hero Section */
-@layer components {
-  .hero-section {
-    @apply p-5 container mx-auto flex flex-wrap items-center justify-center gap-3 lg:gap-5;
-  }
+.hero-section {
+  @apply p-5 container mx-auto flex flex-wrap items-center justify-center gap-3 lg:gap-5;
+}
 
-  .hero-text {
-    @apply flex flex-col items-start space-y-4 lg:w-1/2;
-  }
+.hero-text {
+  @apply flex flex-col items-start space-y-4 lg:w-1/2;
+}
 
-  .hero-social-icons {
-    @apply flex flex-col space-y-4 mr-4;
-  }
+.hero-social-icons {
+  @apply flex flex-col space-y-4 mr-4;
+}
 
-  .scroll-button {
-    @apply mt-6 text-black text-base hidden lg:flex lg:items-center gap-x-2;
-  }
+.scroll-button {
+  @apply mt-6 text-black text-base hidden lg:flex lg:items-center gap-x-2;
+}
 
-  .hero-image {
-    @apply rounded-full drop-shadow-xl object-cover border-gray-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[22rem] lg:w-[22rem];
-  }
+.hero-image {
+  @apply rounded-full drop-shadow-xl object-cover border-gray-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[22rem] lg:w-[22rem];
 }
 
 /* About Section */
-@layer components {
-  .about-container {
-    @apply flex flex-col md:flex-row items-center md:gap-x-5 lg:mt-10;
-  }
-  .about-image-wrapper {
-    @apply flex-1 flex items-center justify-center w-full drop-shadow-md;
-  }
-  .about-image {
-    @apply pb-5 rounded-2xl drop-shadow-md  h-60 w-60 object-cover;
-  }
-  .about-content {
-    @apply flex-1;
-  }
-  .about-cards {
-    @apply flex flex-row gap-3 flex-wrap items-center justify-center md:flex-nowrap;
-  }
-  .about-card {
-    @apply border-gray-300 bg-white rounded-md border-2 p-3 flex flex-1 flex-col items-center gap-y-2 text-nowrap;
-  }
+.about-container {
+  @apply flex flex-col md:flex-row items-center md:gap-x-5 lg:mt-10;
+}
+.about-image-wrapper {
+  @apply flex-1 flex items-center justify-center w-full drop-shadow-md;
+}
+.about-image {
+  @apply pb-5 rounded-2xl drop-shadow-md  h-60 w-60 object-cover;
+}
+.about-content {
+  @apply flex-1;
+}
+.about-cards {
+  @apply flex flex-row gap-3 flex-wrap items-center justify-center md:flex-nowrap;
+}
+.about-card {
+  @apply border-gray-300 bg-white rounded-md border-2 p-3 flex flex-1 flex-col items-center gap-y-2 text-nowrap;
+}
 
-  .about-resume-button-wrapper {
-    @apply text-center mt-5 md:text-left;
-  }
+.about-resume-button-wrapper {
+  @apply text-center mt-5 md:text-left;
 }
 
 /* Skills Section */
+.skill-container {
+  @apply flex flex-col md:flex-row gap-5 mt-10;
+}
 
-@layer components {
-  .skill-container {
-    @apply flex flex-col md:flex-row gap-5 mt-10;
-  }
+.skill-frontend,
+.skill-backend {
+  @apply w-full;
+}
 
-  .skill-frontend,
-  .skill-backend {
-    @apply w-full;
-  }
+.skill-card {
+  @apply bg-white p-5 w-80 mx-auto rounded-xl flex flex-col items-center drop-shadow-md border border-gray-200;
+}
 
-  .skill-card {
-    @apply bg-white p-5 w-80 mx-auto rounded-xl flex flex-col items-center drop-shadow-md border border-gray-200;
-  }
+.skill-card-header {
+  @apply font-bold mb-5 text-xl tracking-wide;
+}
 
-  .skill-card-header {
-    @apply font-bold mb-5 text-xl tracking-wide;
-  }
-
-  .skill-card-body {
-    @apply flex items-center w-full justify-center gap-x-10;
-  }
+.skill-card-body {
+  @apply flex items-center w-full justify-center gap-x-10;
 }

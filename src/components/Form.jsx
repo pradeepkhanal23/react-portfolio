@@ -14,7 +14,7 @@ const Form = () => {
           <input
             type="text"
             id="name"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
             placeholder="John Doe"
             required
           />
@@ -29,22 +29,23 @@ const Form = () => {
           <input
             type="email"
             id="email"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black block w-full p-2.5"
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
             required
+            placeholder="johndoe@gmail.com"
           />
         </div>
         <div className="mb-5">
           <label
-            htmlFor="message"
+            htmlFor="project"
             className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
           >
-            Message
+            Project
           </label>
           <textarea
-            id="message"
+            id="project"
             rows="4"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black block w-full p-2.5"
-            placeholder="Write your message here..."
+            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5"
+            placeholder="Write your project idea here..."
             required
           ></textarea>
         </div>

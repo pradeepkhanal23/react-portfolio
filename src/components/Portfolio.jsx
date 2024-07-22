@@ -63,26 +63,26 @@ const Portfolio = () => {
                   <p className="text-gray-500 text-sm">
                     {project.projectDescription}
                   </p>
-                  <div className="flex w-full items-center justify-between mt-4">
-                    <a
+                  <div className="flex w-full items-center justify-center gap-x-5 md:gap-x-10 mt-4">
+                    <button
                       href={project.demoLink}
-                      className="subtle flex items-center  gap-x-2 cursor-pointer "
+                      className=" flex items-center gap-x-2  cursor-pointer px-6 py-2 bg-gray-200 rounded-md font-['DynaPuff'] text-xs hover:bg-black hover:text-white"
                       target="_blank"
                     >
+                      Demo
                       <MdLiveTv />
-                      <span> Demo</span>
-                      <FaArrowRightLong className="animate-bounceRight " />
-                    </a>
+                      {/* <FaArrowRightLong className="animate-bounceRight " /> */}
+                    </button>
 
-                    <a
+                    <button
                       href={project.githubLink}
-                      className="subtle flex items-center  gap-x-2 cursor-pointer "
+                      className=" flex items-center  gap-x-2 cursor-pointer px-6 py-2 bg-gray-200 rounded-md font-['DynaPuff'] text-xs hover:bg-black hover:text-white"
                       target="_blank"
                     >
+                      Github
                       <LuGithub />
-                      <span> Github Link</span>
-                      <FaArrowRightLong className="animate-bounceRight " />
-                    </a>
+                      {/* <FaArrowRightLong className="animate-bounceRight " /> */}
+                    </button>
                   </div>
                 </div>
               </div>

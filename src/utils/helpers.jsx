@@ -204,7 +204,7 @@ export const projects = [
   {
     id: 1,
     title: "Aqua Pro",
-    category: ["Desktop", "Web App", "All"],
+    category: ["Desktop", "Web", "All"],
     imageUrl: ProjectImage1,
     demoLink: "https://aqua-pro.netlify.app/",
     githubLink: "https://github.com/pradeepkhanal23/landing-page-project",
@@ -214,7 +214,7 @@ export const projects = [
   {
     id: 2,
     title: "Qilo",
-    category: ["Desktop", "Web App", "All"],
+    category: ["Desktop", "Web", "All"],
     imageUrl: ProjectImage2,
     demoLink: "https://qilo.netlify.app/",
     guthubLink: "https://github.com/pradeepkhanal23/caltrack-oop-project",
@@ -233,7 +233,7 @@ export const projects = [
   },
 ];
 
-export const portfolioTags = ["All", "React", "Web App", "Desktop"];
+export const portfolioTags = ["All", "React", "Web", "Desktop"];
 
 export const contactCards = [
   {
