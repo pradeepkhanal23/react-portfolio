@@ -55,7 +55,7 @@
   html {
     font-family: "Urbanist", "Figtree", sans-serif;
     font-optical-sizing: auto;
-    font-size: 110%;
+    /* font-size: 110%; */
   }
 
   body {
@@ -94,7 +94,7 @@
   }
 
   .hero-image {
-    @apply rounded-full drop-shadow-xl object-cover border-gray-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[20rem] lg:w-[20rem];
+    @apply rounded-full drop-shadow-xl object-cover border-gray-300 border-opacity-75 border-8  lg:order-3 h-[13rem] w-[13rem] md:h-[18rem] md:w-[18rem] lg:h-[22rem] lg:w-[22rem];
   }
 }
 
@@ -104,10 +104,10 @@
     @apply flex flex-col md:flex-row items-center md:gap-x-5 lg:mt-10;
   }
   .about-image-wrapper {
-    @apply flex-1 flex items-center justify-center w-full;
+    @apply flex-1 flex items-center justify-center w-full drop-shadow-md;
   }
   .about-image {
-    @apply mt-5 mb-5 rounded-2xl drop-shadow-md  h-80 w-80 object-cover;
+    @apply pb-5 rounded-2xl drop-shadow-md  h-60 w-60 object-cover;
   }
   .about-content {
     @apply flex-1;

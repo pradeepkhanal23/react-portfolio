@@ -9,6 +9,9 @@ import { GoStack } from "react-icons/go";
 import ProjectImage1 from "../assets/screenshots/aqua-pro.png";
 import ProjectImage2 from "../assets/screenshots/qilo.png";
 import ProjectImage3 from "../assets/screenshots/splitter.png";
+import { TfiEmail } from "react-icons/tfi";
+import { FaWhatsapp } from "react-icons/fa";
+import { RiMessengerLine } from "react-icons/ri";
 
 export const socialMedia = [
   {
@@ -204,6 +207,7 @@ export const projects = [
     category: ["Desktop", "Web App", "All"],
     imageUrl: ProjectImage1,
     demoLink: "https://aqua-pro.netlify.app/",
+    githubLink: "https://github.com/pradeepkhanal23/landing-page-project",
     projectDescription:
       "Landing page for a plumbing service company.This project is part of my take home assignment.",
   },
@@ -213,6 +217,7 @@ export const projects = [
     category: ["Desktop", "Web App", "All"],
     imageUrl: ProjectImage2,
     demoLink: "https://qilo.netlify.app/",
+    guthubLink: "https://github.com/pradeepkhanal23/caltrack-oop-project",
     projectDescription:
       "This application is designed to help users track their daily calorie intake and maintain a healthy lifestyle.",
   },
@@ -222,9 +227,31 @@ export const projects = [
     category: ["React", "All"],
     imageUrl: ProjectImage3,
     demoLink: "https://qilo.netlify.app/",
+    githubLink: "https://github.com/pradeepkhanal23/Splitter",
     projectDescription:
-      "React app from frontend mentor for splitting the bill and calculating the tips",
+      "React app from frontend mentor challenge for splitting the bill and calculating the tips amoung the friends",
   },
 ];
 
 export const portfolioTags = ["All", "React", "Web App", "Desktop"];
+
+export const contactCards = [
+  {
+    id: 1,
+    icon: <TfiEmail />,
+    platform: "Email",
+    contactInfo: "pradeepkhanal642@gmail.com",
+  },
+  {
+    id: 2,
+    icon: <FaWhatsapp />,
+    platform: "Whatsapp",
+    contactInfo: "(+61) 451845350",
+  },
+  {
+    id: 3,
+    icon: <RiMessengerLine />,
+    platform: "Messenger",
+    contactInfo: "pradeep.khanal",
+  },
+];

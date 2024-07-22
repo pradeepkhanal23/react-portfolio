@@ -1,4 +1,4 @@
-import ProfileImage from "../assets/profile-picture.png";
+import ProfileImage from "../assets/avatar.jpg";
 import { SlDocs } from "react-icons/sl";
 import { cards } from "../utils/helpers";
 
