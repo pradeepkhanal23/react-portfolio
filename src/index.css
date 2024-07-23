@@ -10,7 +10,7 @@
 html {
   font-family: "Urbanist", "Figtree", sans-serif;
   font-optical-sizing: auto;
-  /* font-size: 110%; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -67,6 +67,19 @@ body {
 
 .brand-name {
   font-family: "DynaPuff", system-ui;
+}
+
+/* Drawer Section */
+.drawer-ul-li {
+  @apply w-full p-5 flex items-center justify-center;
+}
+
+.drawer-ul-li-a {
+  @apply w-full p-5 flex items-center justify-center hover:font-semibold;
+}
+
+.drawer-icon {
+  @apply text-lg;
 }
 
 /* Hero Section */

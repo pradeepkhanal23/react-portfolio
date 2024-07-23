@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
-import { IoMdClose } from "react-icons/io";
+
+import { TfiLayoutGrid2 } from "react-icons/tfi";
+import Drawer from "./Drawer";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -14,7 +16,7 @@ const Navbar = () => {
     <>
       <header className="pb-6 lg:pb-0 ">
         <div className="px-4 mx-auto  sm:px-6 lg:px-8">
-          <nav className="flex items-center justify-between h-16 lg:h-20">
+          <nav className="hidden sm:flex items-center justify-between py-4">
             <div className="flex-shrink-0">
               <a
                 href="#"
@@ -24,69 +26,54 @@ const Navbar = () => {
               </a>
             </div>
 
-            <ul className="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+            {/* Top Navbar for Large Screen*/}
+            <ul className="flex space-x-6 sm:flex sm:items-center sm:ml-auto ">
               {[
-                "Home",
-                "About",
-                "Skills",
-                "Services",
-                "Portfolio",
-                "Contact",
+                "home",
+                "about",
+                "skills",
+                "services",
+                "portfolio",
+                "contact",
               ].map((link, i) => {
                 return (
                   <li key={i}>
-                    <a href={link} className="navlinks">
+                    <a href={`#${link}`} className="navlinks capitalize">
                       {link}
                     </a>
                   </li>
                 );
               })}
             </ul>
-            <RiMenu3Fill
-              className="text-2xl cursor-pointer lg:hidden"
-              onClick={handleNavToggle}
-            />
           </nav>
 
-          {isNavOpen && (
-            <>
-              <aside
-                className={`p-3 bg-white border  border-gray-200 rounded-md shadow-md lg:hidden 
-               
-                `}
-              >
-                <div className="flex items-start justify-between">
-                  <ul className=" flex-col px-6 -my-2 space-y-3">
-                    {[
-                      "Home",
-                      "About",
-                      "Skills",
-                      "Services",
-                      "Portfolio",
-                      "Contact",
-                    ].map((link, i) => {
-                      return (
-                        <li key={i}>
-                          <a
-                            href={link}
-                            className="navlinks inline-flex py-2"
-                            onClick={handleNavToggle}
-                          >
-                            {link}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  <IoMdClose
-                    className="text-2xl cursor-pointer"
-                    onClick={handleNavToggle}
-                  />
+          <nav>
+            {/* Bottom Navbar for small and medium */}
+            <div className="fixed bottom-0 right-0 left-0 w-full sm:hidden z-20">
+              <div className="flex items-center justify-between py-2 px-6 bg-white shadow-lg  border-t-2 border-gray-200">
+                <div className="flex-shrink-0">
+                  <a
+                    href="#"
+                    className="flex text-2xl uppercase font-semibold brand-name"
+                  >
+                    Pradeep
+                  </a>
                 </div>
-              </aside>
-            </>
-          )}
+                <TfiLayoutGrid2
+                  className="cursor-pointer text-xl"
+                  onClick={handleNavToggle}
+                />
+              </div>
+            </div>
+          </nav>
         </div>
+        {/* Rendering the drawer based on the toggle value */}
+        {isNavOpen && (
+          <Drawer
+            setIsNavOpen={setIsNavOpen}
+            handleNavToggle={handleNavToggle}
+          />
+        )}
       </header>
     </>
   );

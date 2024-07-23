@@ -5,7 +5,10 @@ import { cards } from "../utils/helpers";
 const About = () => {
   return (
     <>
-      <section className="p-5 mx-auto max-w-5xl flex flex-col gap-y-4">
+      <section
+        className="p-5 mx-auto max-w-5xl flex flex-col gap-y-4"
+        id="about"
+      >
         <h2 className="title text-center">About Me</h2>
         <p className="subtitle text-center">My introduction</p>
         <div className="about-container">

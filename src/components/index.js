@@ -7,6 +7,7 @@ import Services from "./Services";
 import Skills from "./Skills";
 import Footer from "./Footer";
 import Contact from "./Contact";
+import Drawer from "./Drawer";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Skills,
   Footer,
   Contact,
+  Drawer,
 };

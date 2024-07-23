@@ -6,7 +6,7 @@ import { socialMedia } from "../utils/helpers";
 const Hero = () => {
   return (
     <>
-      <section className="hero-section mt-5 ">
+      <section className="hero-section mt-5 " id="hero">
         {/* Social Icons */}
         <div className="hero-social-icons ">
           {socialMedia.map((social) => {
@@ -28,7 +28,12 @@ const Hero = () => {
 
         {/* Hero Text Section */}
         <div className="hero-text  mt-5 ">
-          <h1 className="title">Pradeep Khanal</h1>
+          <h1 className="title">
+            Pradeep Khanal{" "}
+            <span>
+              <span>👋</span>
+            </span>
+          </h1>
           <div className="flex items-center space-x-4">
             <hr className="w-10 h-[.12rem] bg-gray-400" />
             <h2 className="subtitle">Frontend Developer</h2>

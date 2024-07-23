@@ -4,7 +4,10 @@ import { backendSkills, frontendSkills } from "../utils/helpers";
 const Skills = () => {
   return (
     <>
-      <section className="p-5 max-w-5xl mx-auto flex flex-col gap-y-5 mt-5">
+      <section
+        className="p-5 max-w-5xl mx-auto flex flex-col gap-y-5 mt-5"
+        id="skills"
+      >
         <div>
           <h2 className="title text-center">Skills</h2>
           <p className="subtitle text-center">My technical level</p>
