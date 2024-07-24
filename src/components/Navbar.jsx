@@ -6,6 +6,7 @@ import Drawer from "./Drawer";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
 
   const handleNavToggle = (e) => {
     e.preventDefault();
@@ -27,7 +28,7 @@ const Navbar = () => {
             </div>
 
             {/* Top Navbar for Large Screen*/}
-            <ul className="flex space-x-6 sm:flex sm:items-center sm:ml-auto ">
+            <ul className="flex gap-x-2">
               {[
                 "home",
                 "about",
@@ -38,7 +39,13 @@ const Navbar = () => {
               ].map((link, i) => {
                 return (
                   <li key={i}>
-                    <a href={`#${link}`} className="navlinks capitalize">
+                    <a
+                      href={`#${link}`}
+                      className={`navlinks capitalize ${
+                        activeLink === link ? "active  " : ""
+                      }`}
+                      onClick={() => setActiveLink(link)}
+                    >
                       {link}
                     </a>
                   </li>

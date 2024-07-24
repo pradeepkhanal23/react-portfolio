@@ -62,7 +62,19 @@ body {
 
 /* Navbar section */
 .navlinks {
-  @apply text-base font-medium transition-all duration-200 hover:text-blue-600 focus:text-blue-600;
+  @apply text-base font-medium transition-all duration-200  px-6 py-2  rounded-md;
+}
+
+.navlinks:hover {
+  @apply bg-gray-200;
+}
+
+.navlinks.active:hover {
+  @apply bg-black text-white;
+}
+
+.active {
+  @apply bg-black text-white;
 }
 
 .brand-name {
