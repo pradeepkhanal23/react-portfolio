@@ -1,10 +1,13 @@
 import { IoMdClose } from "react-icons/io";
-import { IoHomeOutline } from "react-icons/io5";
-import { FaRegUser } from "react-icons/fa";
-import { SlDocs } from "react-icons/sl";
-import { PiShoppingBagOpenLight } from "react-icons/pi";
-import { AiOutlinePicture } from "react-icons/ai";
-import { PiPaperPlaneTiltBold } from "react-icons/pi";
+
+import {
+  FaRegUser,
+  FaHome,
+  FaFileAlt,
+  FaShoppingBag,
+  FaImage,
+  FaPaperPlane,
+} from "react-icons/fa";
 
 const Drawer = ({ setIsNavOpen }) => {
   return (
@@ -30,7 +33,7 @@ const Drawer = ({ setIsNavOpen }) => {
               className="flex flex-col items-center gap-y-2 "
               onClick={() => setIsNavOpen(false)}
             >
-              <IoHomeOutline className="drawer-icon" />
+              <FaHome className="drawer-icon" />
               <span>Home</span>
             </a>
           </li>
@@ -50,7 +53,7 @@ const Drawer = ({ setIsNavOpen }) => {
               className="flex flex-col items-center gap-y-2 "
               onClick={() => setIsNavOpen(false)}
             >
-              <SlDocs className="drawer-icon" />
+              <FaFileAlt className="drawer-icon" />
               <span>Skills</span>
             </a>
           </li>
@@ -60,7 +63,7 @@ const Drawer = ({ setIsNavOpen }) => {
               className="flex flex-col items-center gap-y-2 "
               onClick={() => setIsNavOpen(false)}
             >
-              <PiShoppingBagOpenLight className="drawer-icon" />
+              <FaShoppingBag className="drawer-icon" />
               <span>Services</span>
             </a>
           </li>
@@ -70,7 +73,7 @@ const Drawer = ({ setIsNavOpen }) => {
               className="flex flex-col items-center gap-y-2 "
               onClick={() => setIsNavOpen(false)}
             >
-              <AiOutlinePicture className="drawer-icon" />
+              <FaImage className="drawer-icon" />
               <span>Portfolio</span>
             </a>
           </li>
@@ -80,7 +83,7 @@ const Drawer = ({ setIsNavOpen }) => {
               className="flex flex-col items-center gap-y-2 "
               onClick={() => setIsNavOpen(false)}
             >
-              <PiPaperPlaneTiltBold className="drawer-icon" />
+              <FaPaperPlane className="drawer-icon" />
               <span>Contact</span>
             </a>
           </li>
