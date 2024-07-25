@@ -57,7 +57,7 @@ const Navbar = () => {
           <nav>
             {/* Bottom Navbar for small and medium */}
             <div className="fixed bottom-0 right-0 left-0 w-full sm:hidden z-20">
-              <div className="flex items-center justify-between py-2 px-6 bg-white shadow-lg  border-t-2 border-gray-200">
+              <div className="flex items-center justify-between py-3 px-8 bg-white shadow-lg  border-t-2 border-gray-200">
                 <div className="flex-shrink-0">
                   <a
                     href="#"

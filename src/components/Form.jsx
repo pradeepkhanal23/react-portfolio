@@ -66,7 +66,7 @@ const Form = () => {
         <div className="mb-5">
           <label
             htmlFor="name"
-            className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-md font-medium text-gray-900 "
           >
             Name
           </label>
@@ -83,7 +83,7 @@ const Form = () => {
         <div className="mb-5">
           <label
             htmlFor="email"
-            className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-md font-medium text-gray-900 "
           >
             Email
           </label>
@@ -100,7 +100,7 @@ const Form = () => {
         <div className="mb-5">
           <label
             htmlFor="project"
-            className="block mb-2 text-md font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-md font-medium text-gray-900 "
           >
             Project
           </label>
