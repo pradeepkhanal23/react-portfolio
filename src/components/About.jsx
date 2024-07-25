@@ -1,6 +1,7 @@
 import DisplayImage from "../assets/developer.svg";
 import { SlDocs } from "react-icons/sl";
 import { cards } from "../utils/helpers";
+import resume from "../data/resume.pdf";
 
 const About = () => {
   return (
@@ -41,10 +42,12 @@ const About = () => {
               </p>
             </div>
             <div className="about-resume-button-wrapper">
-              <button className="btn">
-                Download CV
-                <SlDocs className="text-xl" />
-              </button>
+              <a href={resume} download="Pradeep_Khanal_Frontend_Resume">
+                <button className="btn">
+                  Download CV
+                  <SlDocs className="text-xl" />
+                </button>
+              </a>
             </div>
           </div>
         </div>

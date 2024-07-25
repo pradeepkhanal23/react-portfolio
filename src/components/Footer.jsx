@@ -8,9 +8,15 @@ const Footer = () => {
           <a href="#">PRADEEP</a>
         </h2>
         <div className="flex items-center justify-center gap-x-10 mt-5">
-          <p className="text-md">About</p>
-          <p className="text-md">Projects</p>
-          <p className="text-md">Services</p>
+          <a href="#about" className="text-md">
+            About
+          </a>
+          <a href="#portfolio" className="text-md">
+            Projects
+          </a>
+          <a href="#services" className="text-md">
+            Services
+          </a>
         </div>
         <div className="flex items-center justify-center gap-x-5 mt-5">
           {socialMedia.map((social) => {
@@ -18,7 +24,7 @@ const Footer = () => {
               <a
                 href={social.linkPath}
                 target="_blank"
-                className="text-2xl md:text-3xl"
+                className="text-2xl md:text-3xl cursor-pointer"
                 key={social.id}
               >
                 {social.icon}
