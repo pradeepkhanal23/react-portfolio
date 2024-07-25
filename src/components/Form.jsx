@@ -25,8 +25,8 @@ const Form = () => {
     e.preventDefault();
 
     setLoading(true);
-    setMessage(""); // Clear previous messages
-    setError(""); // Clear previous errors
+    setMessage(""); // Clearing previous messages
+    setError(""); // Clearing previous errors
 
     try {
       await emailjs.send(
@@ -35,17 +35,29 @@ const Form = () => {
         formData,
         import.meta.env.VITE_PUBLIC_KEY
       );
+
+      setMessage("Email Sent Successfully");
     } catch (err) {
       setError("Failed to send email. Please try again later.");
       console.error("FAILED...", err);
     } finally {
+      //loading state set to false
       setLoading(false);
+
+      //cleared the form
       setFormData({
         name: "",
         email: "",
         project: "",
       });
+
+      //errro is reset to false as well
       setError(false);
+
+      //clearing the message after 3 secs
+      setTimeout(() => {
+        setMessage("");
+      }, 3000);
     }
   };
   return (
@@ -102,11 +114,17 @@ const Form = () => {
             onChange={handleChange}
           ></textarea>
         </div>
-        <button type="submit" className="btn" disabled={loading}>
-          {loading ? "Sending..." : "Send Message"} <PiPaperPlaneTiltBold />
-        </button>
-        {message && <p className="text-green-500 mt-3">{message}</p>}
-        {error && <p className="text-red-500 mt-3">{error}</p>}
+        <div className="flex items-center gap-x-5">
+          <button type="submit" className="btn" disabled={loading}>
+            {loading ? "Sending..." : "Send"} <PiPaperPlaneTiltBold />
+          </button>
+          {message && (
+            <p className="text-green-500 capitalize font-semibold">
+              {message}!!
+            </p>
+          )}
+          {error && <p className="text-red-500 ">{error}!!</p>}
+        </div>
       </form>
     </>
   );
