@@ -10,7 +10,7 @@ const Drawer = ({ setIsNavOpen }) => {
   return (
     <>
       <aside
-        className={` bg-white border rounded-t-xl border-gray-200 h-1/3 rounded-md overflow-y-hidden shadow-xl sm:hidden  fixed bottom-0 right-0 left-0 z-30 transition-transform duration-300 ease-in-out ${
+        className={` bg-white border rounded-t-xl border-gray-200 rounded-md overflow-y-hidden shadow-xl sm:hidden  fixed bottom-0 right-0 left-0 z-30 transition-transform duration-300 ease-in-out ${
           setIsNavOpen ? "translate-y-0" : "translate-y-full"
         }`}
       >

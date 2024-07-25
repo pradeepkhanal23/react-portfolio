@@ -1,54 +1,56 @@
-import { SlBadge } from "react-icons/sl";
-import { AiOutlineFileDone } from "react-icons/ai";
-import { BiSupport } from "react-icons/bi";
-import { CiInstagram, CiFacebook } from "react-icons/ci";
-import { RiGithubLine } from "react-icons/ri";
-import { CgWebsite } from "react-icons/cg";
-import { FaRegFileCode } from "react-icons/fa6";
-import { GoStack } from "react-icons/go";
 import ProjectImage1 from "../assets/screenshots/aqua-pro.png";
 import ProjectImage2 from "../assets/screenshots/qilo.png";
 import ProjectImage3 from "../assets/screenshots/splitter.png";
-import { TfiEmail } from "react-icons/tfi";
-import { FaWhatsapp } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaCalendarCheck,
+  FaAward,
+  FaProjectDiagram,
+  FaLaptopCode,
+  FaCode,
+  FaLayerGroup,
+  FaEnvelope,
+} from "react-icons/fa";
 import { RiMessengerLine } from "react-icons/ri";
 
 export const socialMedia = [
   {
     id: 1,
-    icon: <CiInstagram />,
-    linkPath: "https://www.instagram.com",
+    icon: <FaLinkedin />,
+    linkPath: "https://www.linkedin.com/in/pradeepk10",
   },
   {
     id: 2,
-    icon: <CiFacebook />,
-    linkPath: "https://www.facebook.com",
+    icon: <FaGithub />,
+    linkPath: "https://www.github.com/pradeepkhanal23",
   },
   {
     id: 3,
-    icon: <RiGithubLine />,
-    linkPath: "https://www.github.com/pradeepkhanal23",
+    icon: <FaInstagram />,
+    linkPath: "https://www.instagram.com/khanal.pradeep",
   },
 ];
 
 export const cards = [
   {
     id: 1,
-    icon: <SlBadge />,
+    icon: <FaAward />,
     title: "Experience",
     info: "2+ Years",
   },
   {
     id: 2,
-    icon: <AiOutlineFileDone />,
+    icon: <FaProjectDiagram />,
     title: "Completed",
     info: "20+ Projects",
   },
   {
     id: 3,
-    icon: <BiSupport />,
-    title: "Support",
-    info: "Online 24/7",
+    icon: <FaCalendarCheck />,
+    title: "Availability",
+    info: "Open to work",
   },
 ];
 
@@ -120,7 +122,7 @@ export const backendSkills = [
 export const services = [
   {
     id: 1,
-    logo: <CgWebsite />,
+    logo: <FaLaptopCode />,
     tag: "Webite Development",
     details:
       "Services with more than 2years of experience. Providing quality work to clients and companies",
@@ -134,7 +136,7 @@ export const services = [
   },
   {
     id: 2,
-    logo: <FaRegFileCode />,
+    logo: <FaCode />,
     tag: "Frontend Development",
     details:
       "Experienced in building responsive and interactive user interfaces.",
@@ -148,7 +150,7 @@ export const services = [
   },
   {
     id: 3,
-    logo: <GoStack />,
+    logo: <FaLayerGroup />,
     tag: "FullStack Development",
     details:
       "Proficient in both frontend and backend development for comprehensive web solutions.",
@@ -186,7 +188,6 @@ export const qualifications = {
       date: "Feb 2024- Aug 2024 (expected)",
       description:
         "Studied intensive full stack web development course alongside 20+ hands-on and real world projects. Comprehensive practice with both frontend and backend technologies",
-      person: null,
     },
     {
       id: 2,
@@ -195,7 +196,6 @@ export const qualifications = {
       date: "2013 - 2017",
       description:
         "Relevant course work DSA, Operating system, Database management system(DBMS), Programming, Computer networks, Human-computer iteraction",
-      person: null,
     },
   ],
 };
@@ -217,7 +217,7 @@ export const projects = [
     category: ["Desktop", "Web", "All"],
     imageUrl: ProjectImage2,
     demoLink: "https://qilo.netlify.app/",
-    guthubLink: "https://github.com/pradeepkhanal23/caltrack-oop-project",
+    githubLink: "https://github.com/pradeepkhanal23/caltrack-oop-project",
     projectDescription:
       "This application is designed to help users track their daily calorie intake and maintain a healthy lifestyle.",
   },
@@ -226,7 +226,7 @@ export const projects = [
     title: "Splitter",
     category: ["React", "All"],
     imageUrl: ProjectImage3,
-    demoLink: "https://qilo.netlify.app/",
+    demoLink: "https://splitter-pradeep-frontendmentor.netlify.app/",
     githubLink: "https://github.com/pradeepkhanal23/Splitter",
     projectDescription:
       "React app from frontend mentor challenge for splitting the bill and calculating the tips amoung the friends",
@@ -238,20 +238,16 @@ export const portfolioTags = ["All", "React", "Web", "Desktop"];
 export const contactCards = [
   {
     id: 1,
-    icon: <TfiEmail />,
+    icon: <FaEnvelope />,
     platform: "Email",
     contactInfo: "pradeepkhanal642@gmail.com",
+    contactLink: "mailto:pradeepkhanal642@gmail.com",
   },
   {
     id: 2,
-    icon: <FaWhatsapp />,
-    platform: "Whatsapp",
-    contactInfo: "(+61) 451845350",
-  },
-  {
-    id: 3,
-    icon: <RiMessengerLine />,
-    platform: "Messenger",
-    contactInfo: "pradeep.khanal",
+    icon: <FaLinkedin />,
+    platform: "LinkedIn",
+    contactInfo: "www.linkedin.com/in/pradeepk10",
+    contactLink: "http://www.linkedin.com/in/pradeepk10",
   },
 ];

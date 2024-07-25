@@ -1,4 +1,4 @@
-import ProfileImage from "../assets/avatar.jpg";
+import DisplayImage from "../assets/developer.svg";
 import { SlDocs } from "react-icons/sl";
 import { cards } from "../utils/helpers";
 
@@ -14,7 +14,7 @@ const About = () => {
         <div className="about-container">
           <div className="about-image-wrapper">
             <img
-              src={ProfileImage}
+              src={DisplayImage}
               alt="profile picture"
               className="about-image"
             />

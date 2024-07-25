@@ -44,9 +44,11 @@ const Hero = () => {
             problem solving, teamwork, and building projects from ideation to
             execution with a pixel perfect mindset.
           </p>
-          <button className="btn">
-            Say Hello <PiPaperPlaneTiltBold />
-          </button>
+          <a href="#contact">
+            <button className="btn">
+              Say Hello <PiPaperPlaneTiltBold />
+            </button>
+          </a>
           <div className="scroll-button pt-10">
             <PiMouseSimpleLight className="text-3xl" />
             Scroll Down

@@ -1,10 +1,9 @@
 import { useState } from "react";
 import { qualifications } from "../utils/helpers";
-import { RiGraduationCapLine } from "react-icons/ri";
-import { MdOutlineShoppingBag } from "react-icons/md";
+import { FaBriefcase, FaUniversity } from "react-icons/fa";
 
 const Qualifications = () => {
-  const [view, setView] = useState("experience");
+  const [view, setView] = useState("education");
 
   const handleToggle = (viewType) => {
     setView(viewType);
@@ -27,7 +26,7 @@ const Qualifications = () => {
                 : "font-lighter"
             }`}
           >
-            <RiGraduationCapLine className="text-xl" /> Education
+            <FaUniversity className="text-xl" /> Education
           </button>
           <button
             onClick={() => handleToggle("experience")}
@@ -37,7 +36,7 @@ const Qualifications = () => {
                 : "font-lighter"
             }`}
           >
-            <MdOutlineShoppingBag className="text-xl" /> Experience
+            <FaBriefcase className="text-xl" /> Experience
           </button>
         </div>
 

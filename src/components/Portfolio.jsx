@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { projects, portfolioTags } from "../utils/helpers";
-import { FaArrowRightLong } from "react-icons/fa6";
-import { MdLiveTv } from "react-icons/md";
-import { LuGithub } from "react-icons/lu";
+
+import { FaTv, FaGithub } from "react-icons/fa";
 
 const Portfolio = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -42,17 +41,17 @@ const Portfolio = () => {
               );
             })}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 mt-10">
+          <div className="grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-8 mt-10">
             {filteredProjects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-300 p-3 flex flex-col justify-start"
+                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-300 p-3 "
               >
-                <div className="h-52 w-full">
+                <div className="h-60 w-full border border-gray-200 rounded-xl">
                   <img
                     src={project.imageUrl}
                     alt={project.title}
-                    className="w-full h-full rounded-xl drop-shadow-sm border border-gray-200 object-cover"
+                    className="w-full h-full rounded-xl object-cover "
                   />
                 </div>
 
@@ -64,25 +63,18 @@ const Portfolio = () => {
                     {project.projectDescription}
                   </p>
                   <div className="flex w-full items-center justify-center gap-x-5 md:gap-x-10 mt-4">
-                    <button
-                      href={project.demoLink}
-                      className=" flex items-center gap-x-2  cursor-pointer px-6 py-2 bg-gray-200 rounded-md font-['DynaPuff'] text-xs hover:bg-black hover:text-white"
-                      target="_blank"
-                    >
-                      Demo
-                      <MdLiveTv />
-                      {/* <FaArrowRightLong className="animate-bounceRight " /> */}
-                    </button>
-
-                    <button
-                      href={project.githubLink}
-                      className=" flex items-center  gap-x-2 cursor-pointer px-6 py-2 bg-gray-200 rounded-md font-['DynaPuff'] text-xs hover:bg-black hover:text-white"
-                      target="_blank"
-                    >
-                      Github
-                      <LuGithub />
-                      {/* <FaArrowRightLong className="animate-bounceRight " /> */}
-                    </button>
+                    <a href={project.demoLink} target="_blank">
+                      <button className=" flex items-center gap-x-2  cursor-pointer px-4 py-2 bg-gray-200 rounded-md  text-sm  font-['DynaPuff'] hover:bg-black hover:text-white">
+                        Demo
+                        <FaTv />
+                      </button>
+                    </a>
+                    <a href={project.githubLink} target="_blank">
+                      <button className=" flex items-center gap-x-2  cursor-pointer px-4 py-2 bg-gray-200 rounded-md  text-sm  font-['DynaPuff'] hover:bg-black hover:text-white">
+                        Github
+                        <FaGithub />
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>

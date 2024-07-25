@@ -15,7 +15,7 @@ const Contact = () => {
             </div>
             <div>
               {contactCards.map((card) => {
-                const { id, platform, contactInfo, icon } = card;
+                const { id, platform, contactInfo, icon, contactLink } = card;
                 return (
                   <article
                     className="bg-white py-6 m-5  border border-gray-300 rounded-lg"
@@ -27,7 +27,8 @@ const Contact = () => {
                     <h4 className="para font-semibold">{platform}</h4>
                     <p className="subtle">{contactInfo}</p>
                     <a
-                      href="#"
+                      href={contactLink}
+                      target="_blank"
                       className="flex items-center justify-center mt-4 gap-x-2 subtle "
                     >
                       Write me
@@ -42,6 +43,7 @@ const Contact = () => {
             <h4 className="text-xl font-semibold text-center mb-5">
               Write me your project
             </h4>
+            {/* Form Component */}
             <Form />
           </div>
         </div>
