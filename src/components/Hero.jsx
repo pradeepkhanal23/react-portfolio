@@ -29,10 +29,7 @@ const Hero = () => {
         {/* Hero Text Section */}
         <div className="hero-text  mt-5 ">
           <h1 className="title">
-            Pradeep Khanal{" "}
-            <span>
-              <span>👋</span>
-            </span>
+            Pradeep Khanal <span>👋</span>
           </h1>
           <div className="flex items-center space-x-4">
             <hr className="w-10 h-[.12rem] bg-gray-400" />
