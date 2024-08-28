@@ -1,24 +1,13 @@
-import { PiPaperPlaneTiltBold, PiMouseSimpleLight } from "react-icons/pi";
+import { PiMouseSimpleLight } from "react-icons/pi";
 import { FiArrowDown } from "react-icons/fi";
 import ProfileImage from "../assets/profile-picture.png";
 import { socialMedia } from "../utils/helpers";
+import { html } from "../assets/icons/index";
 
 const Hero = () => {
   return (
     <>
-      <section className="hero-section mt-[5rem]">
-        {/* Social Icons */}
-        <div className="hero-social-icons ">
-          {socialMedia.map((social) => {
-            const { id, icon, linkPath } = social;
-            return (
-              <a key={id} href={linkPath} target="_blank">
-                <span className="text-3xl lg:text-4xl">{icon}</span>
-              </a>
-            );
-          })}
-        </div>
-
+      <section className="hero-section min-h-screen ">
         {/* Hero Image Section */}
         <img
           className="hero-image bubble-image "
@@ -27,29 +16,44 @@ const Hero = () => {
         />
 
         {/* Hero Text Section */}
-        <div className="hero-text  mt-5 ">
-          <h1 className="title">
-            Pradeep Khanal <span>👋</span>
+        <div className="hero-text mt-5">
+          <h1 className="title text-center md:text-left">
+            Pradeep Khanal
+            <span> 👋</span>
           </h1>
-          <div className="flex items-center space-x-4">
-            <hr className="w-10 h-[.12rem] bg-gray-400" />
-            <h2 className="subtitle">Frontend Developer</h2>
+          <div className="flex items-center  space-x-4">
+            <hr className="w-10 h-[.15rem] bg-gray-500" />
+            <h2 className="font-semibold text-lg">Full-Stack Web Developer </h2>
           </div>
-          <p className="para">
-            Front-end web developer with a background in Computer Engineering to
-            blend the artistic mind with creativity. Strengths in innovation,
-            problem solving, teamwork, and building projects from ideation to
-            execution with a pixel perfect mindset.
+          <p className="para text-center md:text-left">
+            Hi, I'm Pradeep. A passionate full-stack web developer with a
+            background in Computer Engineering to blend the artistic mind with
+            creativity. I am based in Sydney, NSW, Australia. 📍
           </p>
-          <a href="#contact">
-            <button className="btn">
-              Say Hello <PiPaperPlaneTiltBold />
-            </button>
-          </a>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-x-5 ">
+            {socialMedia.map((social) => {
+              const { id, icon, linkPath } = social;
+              return (
+                <a key={id} href={linkPath} target="_blank">
+                  <span className="text-3xl lg:text-4xl">{icon}</span>
+                </a>
+              );
+            })}
+          </div>
+          <div className="pt-10 ">
+            <h2 className="text-lg mb-5 font-semibold underline underline-offset-4 md:no-underline md:border-r-2 border-gray-500 md:pr-5">
+              Tech Stack
+            </h2>
+            <div>
+              <img src={html} alt="html logo" className="h-14 w-14" />
+            </div>
+          </div>
           <div className="scroll-button pt-10">
-            <PiMouseSimpleLight className="text-3xl" />
+            <PiMouseSimpleLight className="h-6 w-6" />
             Scroll Down
-            <FiArrowDown className="animate-bounce text-xl" />
+            <FiArrowDown className="animate-bounce h-5 w-5" />
           </div>
         </div>
       </section>
