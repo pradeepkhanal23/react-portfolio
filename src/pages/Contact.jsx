@@ -1,5 +1,5 @@
 import { contactCards } from "../utils/helpers";
-import Form from "./Form";
+import Form from "../components/Form";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Contact = () => {

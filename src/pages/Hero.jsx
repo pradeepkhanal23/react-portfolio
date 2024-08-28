@@ -6,7 +6,7 @@ import { socialMedia } from "../utils/helpers";
 const Hero = () => {
   return (
     <>
-      <section className="hero-section mt-5 " id="hero">
+      <section className="hero-section mt-[5rem]">
         {/* Social Icons */}
         <div className="hero-social-icons ">
           {socialMedia.map((social) => {

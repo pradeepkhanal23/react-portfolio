@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #f9f9f9;
   color: #333;
 }
 
@@ -39,6 +39,14 @@ body {
   animation: bubble-motion 2s infinite ease-in-out alternate;
 }
 
+.sidebar {
+  @apply sm:hidden bg-white z-20 transition-transform ease-in-out duration-200 top-0 right-0 fixed w-full h-full translate-x-full py-1 px-6;
+}
+
+.show-sidebar {
+  @apply translate-x-0  ease-out;
+}
+
 /* Custom utility css */
 .title {
   @apply text-3xl font-bold;
@@ -61,21 +69,6 @@ body {
 }
 
 /* Navbar section */
-.navlinks {
-  @apply text-base font-medium transition-all duration-200 p-2 rounded-md lg:px-4;
-}
-
-.navlinks:hover {
-  @apply bg-gray-200;
-}
-
-.navlinks.active:hover {
-  @apply bg-black text-white;
-}
-
-.active {
-  @apply bg-black text-white;
-}
 
 .brand-name {
   font-family: "DynaPuff", system-ui;

@@ -1,7 +1,7 @@
 import { services } from "../utils/helpers";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useState } from "react";
-import Modal from "./Modal";
+import Modal from "../components/Modal";
 
 const Services = () => {
   const [modalOpen, setModalOpen] = useState(false);

@@ -1,28 +1,34 @@
+import { Navbar, Footer } from "./components";
+
 import {
-  Navbar,
   Hero,
-  Footer,
-  Qualifications,
-  Contact,
   About,
   Skills,
   Services,
+  Qualifications,
+  Contact,
   Portfolio,
-} from "./components";
+} from "./pages/index.js";
 
 const App = () => {
   return (
-    <main className="flex flex-col">
-      <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Services />
-      <Qualifications />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </main>
+    <div className="flex flex-col">
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Services />
+        <Qualifications />
+        <Portfolio />
+        <Contact />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   );
 };
 export default App;

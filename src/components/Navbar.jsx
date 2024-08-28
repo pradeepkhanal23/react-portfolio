@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { RiMenu3Fill } from "react-icons/ri";
-
 import { TfiLayoutGrid2 } from "react-icons/tfi";
-import Drawer from "./Drawer";
+import { RiMenu3Fill } from "react-icons/ri";
+import { Drawer } from "../components/index";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("home");
 
   const handleNavToggle = (e) => {
     e.preventDefault();
@@ -15,9 +13,10 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="pb-6 lg:pb-0 ">
-        <div className="px-4 mx-auto  sm:px-6 lg:px-8">
-          <nav className="hidden sm:flex items-center justify-between py-4">
+      <div className="pb-6 lg:pb-0 text-lg" id="home">
+        <div>
+          {/* Top Navbar for Large Screen*/}
+          <nav className="flex items-center backdrop-blur-sm justify-between py-4 bg-white  drop-shadow-md w-full fixed top-0 z-10 px-6 lg:px-10 ">
             <div className="flex-shrink-0">
               <a
                 href="#"
@@ -27,24 +26,14 @@ const Navbar = () => {
               </a>
             </div>
 
-            {/* Top Navbar for Large Screen*/}
-            <ul className="flex gap-x-2">
-              {[
-                "home",
-                "about",
-                "skills",
-                "services",
-                "portfolio",
-                "contact",
-              ].map((link, i) => {
+            {/* Navlinks for the small and above screen */}
+            <ul className="hidden sm:flex gap-x-8 ">
+              {["home", "about", "portfolio", "contact"].map((link, i) => {
                 return (
                   <li key={i}>
                     <a
                       href={`#${link}`}
-                      className={`navlinks capitalize ${
-                        activeLink === link ? "active  " : ""
-                      }`}
-                      onClick={() => setActiveLink(link)}
+                      className={`capitalize font-semibold hover:text-blue-600`}
                     >
                       {link}
                     </a>
@@ -52,26 +41,12 @@ const Navbar = () => {
                 );
               })}
             </ul>
-          </nav>
 
-          <nav>
-            {/* Bottom Navbar for small and medium */}
-            <div className="fixed bottom-0 right-0 left-0 w-full sm:hidden z-20">
-              <div className="flex items-center justify-between py-3 px-8 bg-white shadow-lg  border-t-2 border-gray-200">
-                <div className="flex-shrink-0">
-                  <a
-                    href="#"
-                    className="flex text-2xl uppercase font-semibold brand-name"
-                  >
-                    Pradeep
-                  </a>
-                </div>
-                <TfiLayoutGrid2
-                  className="cursor-pointer text-xl"
-                  onClick={handleNavToggle}
-                />
-              </div>
-            </div>
+            {/* hamburger menu for smaller screen */}
+            <RiMenu3Fill
+              className="cursor-pointer h-6 w-6 sm:hidden hover:text-blue-600"
+              onClick={handleNavToggle}
+            />
           </nav>
         </div>
         {/* Rendering the drawer based on the toggle value */}
@@ -81,7 +56,7 @@ const Navbar = () => {
             handleNavToggle={handleNavToggle}
           />
         )}
-      </header>
+      </div>
     </>
   );
 };
