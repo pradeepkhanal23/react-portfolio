@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="pb-6 lg:pb-0 text-lg" id="home">
         <div>
           {/* Top Navbar for Large Screen*/}
-          <nav className="flex items-center backdrop-blur-sm justify-between py-4 bg-white  drop-shadow-md w-full fixed top-0 z-10 px-6 lg:px-10 ">
+          <nav className="flex items-center backdrop-blur-sm justify-between py-4 bg-white  drop-shadow-md w-full fixed top-0 z-10 px-6 lg:px-10  ">
             <div className="flex-shrink-0">
               <a
                 href="#"
