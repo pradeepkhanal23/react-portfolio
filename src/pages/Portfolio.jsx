@@ -44,7 +44,7 @@ const Portfolio = () => {
             {filteredProjects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-300 p-3 "
+                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-300 p-2 "
               >
                 <div className="h-60 w-full border border-gray-200 rounded-xl">
                   <img
