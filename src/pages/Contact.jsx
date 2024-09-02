@@ -1,13 +1,12 @@
 import { contactCards } from "../utils/helpers";
-import Form from "../components/Form";
+import { Header, Form } from "../components/index";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Contact = () => {
   return (
     <>
       <section id="contact" className="p-5 mt-10 mx-auto w-full max-w-5xl">
-        <h2 className="title text-center">Contact Me</h2>
-        <p className="subtitle text-center">Get in touch</p>
+        <Header title="Contact Me" subtitle="Get in touch" />
         <div className="flex flex-col md:flex-row">
           <div className="text-center mt-10 flex-1">
             <div>

@@ -61,7 +61,7 @@ const Portfolio = () => {
                   <p className="text-gray-500 text-sm">
                     {project.projectDescription}
                   </p>
-                  <div className="flex w-full items-center justify-center gap-x-5 md:gap-x-10 mt-4">
+                  <div className="flex w-full items-center justify-around md:justify-between gap-x-5 md:gap-x-10 mt-4">
                     <a href={project.demoLink} target="_blank">
                       <button className=" flex items-center gap-x-2  cursor-pointer px-4 py-2 bg-gray-200 rounded-md  text-sm  font-['DynaPuff'] hover:bg-black hover:text-white">
                         Demo

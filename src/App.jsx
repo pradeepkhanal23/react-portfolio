@@ -21,7 +21,7 @@ const App = () => {
           <Hero />
           <TechStack />
         </div>
-        <div className="bg-white py-5 min-h-screen">
+        <div className="bg-white py-5 ">
           <About />
         </div>
         <div className="py-5">
