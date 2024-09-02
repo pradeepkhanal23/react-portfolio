@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { qualifications } from "../utils/helpers";
 import { FaBriefcase, FaUniversity } from "react-icons/fa";
+import { Header } from "../components";
 
 const Qualifications = () => {
   const [view, setView] = useState("education");
@@ -13,8 +14,7 @@ const Qualifications = () => {
     <>
       <section className="p-5 w-full max-w-5xl mx-auto">
         <div className="mb-5 text-center">
-          <h2 className="title">Qualification</h2>
-          <p className="subtitle">My personal journey</p>
+          <Header title="Qualification" subtitle="My Personal Journey" />
         </div>
 
         <div className="text-center mb-10">

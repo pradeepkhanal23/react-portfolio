@@ -1,14 +1,9 @@
-/* google font import */
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
-  font-family: "Urbanist", "Figtree", sans-serif;
+  font-family: "Poppins", "Urbanist", "Sen", sans-serif;
   font-optical-sizing: auto;
   scroll-behavior: smooth;
 }
@@ -46,7 +41,11 @@ body {
 
 /* Custom utility css */
 .title {
-  @apply text-4xl md:text-5xl font-extrabold;
+  @apply text-4xl md:text-6xl font-extrabold;
+}
+
+.subtitle {
+  @apply text-lg;
 }
 
 .btn {

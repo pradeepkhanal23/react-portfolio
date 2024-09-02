@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { projects, portfolioTags } from "../utils/helpers";
-
+import { Header } from "../components/index";
 import { FaTv, FaGithub } from "react-icons/fa";
 
 const Portfolio = () => {
@@ -22,9 +22,8 @@ const Portfolio = () => {
     <>
       <section id="portfolio" className="p-5">
         <div className=" mx-auto w-full max-w-5xl">
-          <h2 className="title text-center">Portfolio</h2>
-          <h3 className="subtitle text-center mb-10">Most Recent Work</h3>
-          <div className="flex space-x-4 mb-8  items-center justify-center">
+          <Header title="Portfolio" subtitle="My Recent Work" />
+          <div className="flex space-x-4 my-8  items-center justify-center">
             {portfolioTags.map((tag, i) => {
               return (
                 <button

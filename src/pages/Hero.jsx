@@ -16,7 +16,7 @@ const Hero = () => {
 
         {/* Hero Text Section */}
         <div className="hero-text mt-5">
-          <h1 className="title text-center md:text-left lg:text-nowrap">
+          <h1 className="title  text-center md:text-left lg:text-nowrap">
             Pradeep Khanal
             <span> 👋</span>
           </h1>
@@ -25,9 +25,8 @@ const Hero = () => {
             <h2 className="font-semibold text-lg">Full-Stack Web Developer </h2>
           </div>
           <p className="para text-center md:text-left p-5 md:p-0">
-            Hi, I'm Pradeep. A passionate full-stack web developer with a
-            background in Computer Engineering to blend the artistic mind with
-            creativity. I am based in Sydney, NSW, Australia.📍
+            Hi, I'm Pradeep. A passionate full-stack web developer based in
+            Sydney, NSW, Australia.📍
           </p>
 
           {/* Social Icons */}

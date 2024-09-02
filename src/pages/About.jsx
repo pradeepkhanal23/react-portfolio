@@ -2,16 +2,16 @@ import DisplayImage from "../assets/developer.svg";
 import { SlDocs } from "react-icons/sl";
 import { cards } from "../utils/helpers";
 import resume from "../data/resume.pdf";
+import { Header } from "../components/index";
 
 const About = () => {
   return (
     <>
       <section
-        className="p-5 mx-auto container flex flex-col items-center justi gap-y-4 "
+        className="p-5 mx-auto max-w-5xl flex flex-col items-center justi gap-y-5 "
         id="about"
       >
-        <h2 className="title text-center">About Me</h2>
-        <p className="subtitle text-center">My introduction</p>
+        <Header title="About Me" subtitle="My Introduction" />
         <div className="about-container">
           <div className="about-image-wrapper">
             <img
@@ -35,10 +35,15 @@ const About = () => {
             </div>
             <div className="mt-5">
               <p className="para">
-                As a driven and tech-savvy web developer, I have always had a
-                strong gravitational pull toward technology. I am currently
-                pursuing an intensive full stack web development coding
-                certificate at the University of Sydney.
+                Front-end/Full stack web developer with a background in Computer
+                Engineering to blend the artistic mind with creativity. As a
+                driven and tech-savvy web developer, I have always had a strong
+                gravitational pull toward technology.
+              </p>
+              <br />
+              <p className="para">
+                My main stack currently is React/Tailwind CSS in combination
+                with Node js, Express and Mongo DB.
               </p>
             </div>
             <div className="about-resume-button-wrapper">

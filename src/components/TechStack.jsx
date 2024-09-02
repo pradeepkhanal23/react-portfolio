@@ -16,8 +16,8 @@ import {
 
 const TechStack = () => {
   return (
-    <section className="flex md:px-10 justify-center flex-col items-center  md:mt-5 md:flex-row max-w-7xl mx-auto mb-10 md:mb-0">
-      <span className="text-xl  md:mb-0 font-bold decoration-gray-300 text-nowrap decoration-2 underline underline-offset-8 md:no-underline md:border-r-2 border-gray-300 md:pr-5  md:mr-8">
+    <section className="flex md:p-10 justify-center flex-col items-center  md:mt-5 md:flex-row max-w-7xl mx-auto mb-10 md:mb-0">
+      <span className="text-xl  md:mb-0 font-semibold decoration-gray-300 text-nowrap decoration-2 underline underline-offset-8 md:no-underline md:border-r-2 border-gray-300 md:pr-5  md:mr-8">
         Tech Stack
       </span>
       <div className="mt-5 md:mt-0 md:flex items-center justify-start gap-x-10 ">

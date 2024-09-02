@@ -1,6 +1,11 @@
 import ProjectImage1 from "../assets/screenshots/aqua-pro.png";
 import ProjectImage2 from "../assets/screenshots/qilo.png";
 import ProjectImage3 from "../assets/screenshots/splitter.png";
+import ProjectImage4 from "../assets/screenshots/expense-tracker.png";
+import ProjectImage5 from "../assets/screenshots/reelscape.png";
+import ProjectImage6 from "../assets/screenshots/dashboard.png";
+import ProjectImage7 from "../assets/screenshots/luxehome.png";
+import ProjectImage8 from "../assets/screenshots/weatherapp.png";
 import {
   FaLinkedin,
   FaGithub,
@@ -203,6 +208,46 @@ export const qualifications = {
 export const projects = [
   {
     id: 1,
+    title: "Expense Tracker",
+    category: ["React", "All", "Web", "Desktop"],
+    imageUrl: ProjectImage4,
+    demoLink: "https://expense-tracker-6krc.onrender.com/",
+    githubLink: "https://github.com/pradeepkhanal23/expense-tracker",
+    projectDescription:
+      "A user-friendly web application built with the MERN stack and GraphQL to track your expenses and gain insights into your spending habits.",
+  },
+  {
+    id: 2,
+    title: "Reelscape",
+    category: ["React", "All", "Web", "Desktop"],
+    imageUrl: ProjectImage5,
+    demoLink: "https://reelscapev2.vercel.app/",
+    githubLink: "https://github.com/pradeepkhanal23/reelscape-v2-next",
+    projectDescription:
+      "A movie description website made using Tailwind CSS and latest Next JS features. It uses the movie DB API to fetch the movies and TV shows.",
+  },
+  {
+    id: 3,
+    title: "React Dashboard",
+    category: ["React", "All", "Web", "Desktop"],
+    imageUrl: ProjectImage6,
+    demoLink: "https://mui-react-dashboard.vercel.app/",
+    githubLink: "https://github.com/pradeepkhanal23/react-dashboard",
+    projectDescription:
+      "A modern react dashboard made with enterprise level packages such as MUI data grids, material UI (MUI) and Nivo charts.",
+  },
+  {
+    id: 4,
+    title: "Luxehome Ecommerce",
+    category: ["React", "All", "Web", "Desktop"],
+    imageUrl: ProjectImage7,
+    demoLink: "https://luxehome-ecommerce.netlify.app/",
+    githubLink: "https://github.com/pradeepkhanal23/luxehome-ecommerce",
+    projectDescription:
+      "LuxeHome Furniture is an ambitious ecommerce website project designed to offer a luxurious and seamless online shopping experience for furniture enthusiasts.",
+  },
+  {
+    id: 5,
     title: "Aqua Pro",
     category: ["Desktop", "Web", "All"],
     imageUrl: ProjectImage1,
@@ -212,7 +257,7 @@ export const projects = [
       "Landing page for a plumbing service company.This project is part of my take home assignment.",
   },
   {
-    id: 2,
+    id: 6,
     title: "Qilo",
     category: ["Desktop", "Web", "All"],
     imageUrl: ProjectImage2,
@@ -222,7 +267,7 @@ export const projects = [
       "This application is designed to help users track their daily calorie intake and maintain a healthy lifestyle.",
   },
   {
-    id: 3,
+    id: 7,
     title: "Splitter",
     category: ["React", "All"],
     imageUrl: ProjectImage3,
@@ -230,6 +275,16 @@ export const projects = [
     githubLink: "https://github.com/pradeepkhanal23/Splitter",
     projectDescription:
       "React app from frontend mentor challenge for splitting the bill and calculating the tips amoung the friends",
+  },
+  {
+    id: 8,
+    title: "Weather Dashboard",
+    category: ["Web", "Desktop", "All"],
+    imageUrl: ProjectImage8,
+    demoLink: "https://pradeepkhanal23.github.io/weather-dashboard/",
+    githubLink: "https://github.com/pradeepkhanal23/weather-dashboard",
+    projectDescription:
+      "This application allows you to check the current weather and 5-day forecast for any city around the world.",
   },
 ];
 

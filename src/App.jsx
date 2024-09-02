@@ -21,11 +21,15 @@ const App = () => {
           <Hero />
           <TechStack />
         </div>
-        <About />
-        <Skills />
-        <Services />
-        <Qualifications />
-        <Portfolio />
+        <div className="bg-white py-5 min-h-screen">
+          <About />
+        </div>
+        <div className="py-5">
+          <Qualifications />
+        </div>
+        <div className="bg-white py-5">
+          <Portfolio />
+        </div>
         <Contact />
       </main>
       <footer>

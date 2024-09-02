@@ -74,7 +74,7 @@ const Form = () => {
             type="text"
             id="name"
             value={formData.name}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="John Doe"
             required
             onChange={handleChange}
@@ -91,7 +91,7 @@ const Form = () => {
             type="email"
             id="email"
             value={formData.email}
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             required
             onChange={handleChange}
             placeholder="johndoe@gmail.com"
@@ -108,7 +108,7 @@ const Form = () => {
             id="project"
             value={formData.project}
             rows="4"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+            className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
             placeholder="Write your project idea here..."
             required
             onChange={handleChange}
