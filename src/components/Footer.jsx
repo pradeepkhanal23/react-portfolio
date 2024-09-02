@@ -3,10 +3,7 @@ import { socialMedia } from "../utils/helpers";
 const Footer = () => {
   return (
     <>
-      <section
-        id="footer"
-        className="p-5 w-full bg-slate-900 text-white mb-[3rem] sm:mb-0"
-      >
+      <section id="footer" className="p-5 w-full bg-slate-900 text-white ">
         <h2 className="text-2xl font-semibold text-center brand-name ">
           <a href="#">PRADEEP</a>
         </h2>
