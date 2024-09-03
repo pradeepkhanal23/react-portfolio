@@ -35,6 +35,7 @@ const ProjectCard = ({
                 );
               })}
           </div>
+          <hr />
           <div className="flex items-center justify-between  p-2">
             <a
               href={githubLink}
