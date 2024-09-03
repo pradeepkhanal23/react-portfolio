@@ -36,9 +36,10 @@ const About = () => {
             <div className="mt-5">
               <p className="para">
                 Front-end/Full stack web developer with a background in Computer
-                Engineering to blend the artistic mind with creativity. As a
-                driven and tech-savvy web developer, I have always had a strong
-                gravitational pull toward technology.
+                Engineering to blend the artistic mind with creativity.
+                Strengths in innovation, problem solving, teamwork, and building
+                projects from ideation to execution with a pixel perfect
+                mindset.
               </p>
               <br />
               <p className="para">

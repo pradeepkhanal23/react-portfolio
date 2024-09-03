@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-family: "Poppins", "Urbanist", "Sen", sans-serif;
+  font-family: "Urbanist", "Figtree", sans-serif;
   font-optical-sizing: auto;
   scroll-behavior: smooth;
 }
