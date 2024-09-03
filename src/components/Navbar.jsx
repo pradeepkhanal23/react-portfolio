@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <a
                 href="#"
-                className="flex text-2xl uppercase font-semibold brand-name"
+                className="flex text-3xl uppercase font-semibold brand-name"
               >
                 Pradeep
               </a>

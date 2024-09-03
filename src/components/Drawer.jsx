@@ -12,7 +12,9 @@ const navlinksWithIcon = [
 const Drawer = ({ setIsNavOpen }) => {
   return (
     <>
-      <aside className={`${setIsNavOpen ? "sidebar show-sidebar" : "sidebar"}`}>
+      <aside
+        className={`${setIsNavOpen ? "sidebar show-sidebar " : "sidebar"}`}
+      >
         <div className="absolute right-0 top-0 ">
           <IoMdClose
             className="cursor-pointer hover:text-blue-600 h-6 w-6 m-5"

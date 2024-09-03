@@ -36,7 +36,7 @@ body {
 }
 
 .show-sidebar {
-  @apply translate-x-0  ease-out;
+  @apply translate-x-0 ease-out;
 }
 
 /* Custom utility css */

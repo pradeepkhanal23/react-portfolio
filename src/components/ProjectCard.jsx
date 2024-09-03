@@ -10,10 +10,10 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <div className="mx-auto max-w-sm  rounded-xl border bg-white shadow-lg">
-        <div className="h-52 w-full p-2">
+      <div className="mx-auto max-w-sm   border bg-white shadow-lg">
+        <div className="h-64 w-full p-2">
           <img
-            className="h-full w-full object-cover rounded-t-xl border border-gray-100"
+            className="h-full w-full object-cover  border border-gray-100"
             src={imageUrl}
             alt={title}
           />

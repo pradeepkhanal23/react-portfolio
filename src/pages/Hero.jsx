@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
           <p className="para text-center md:text-left p-5 md:p-0">
             Hi, I'm Pradeep. A passionate full-stack web developer based in
-            Sydney, NSW, Australia.<span>📍</span>
+            Sydney, NSW, Australia<span>📍</span>
           </p>
 
           {/* Social Icons */}
