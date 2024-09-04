@@ -221,7 +221,7 @@ export const projects = [
       "JWT",
     ],
     imageUrl: ProjectImage4,
-    demoLink: "https://expense-tracker-6krc.onrender.com/",
+    demoLink: "https://expensetrac.com/",
     githubLink: "https://github.com/pradeepkhanal23/expense-tracker",
     projectDescription:
       "A user-friendly web application built with the MERN stack and GraphQL to track your expenses and gain insights into your spending habits.",
