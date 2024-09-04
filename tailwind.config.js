@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        sidebar: "url('./src/assets/developer.svg')",
+        "sidebar-pattern": "url('./src/assets/icons/developer.svg')",
       },
       keyframes: {
         bounceRight: {
