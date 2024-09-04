@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        sidebar: "url('./src/assets/developer.svg')",
+      },
       keyframes: {
         bounceRight: {
           "0%": { transform: "translateX(0)" },

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { TfiLayoutGrid2 } from "react-icons/tfi";
 import { RiMenu3Fill } from "react-icons/ri";
-import { Drawer } from "../components/index";
+import { Sidebar } from "../components/index";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -49,13 +48,8 @@ const Navbar = () => {
             />
           </nav>
         </div>
-        {/* Rendering the drawer based on the toggle value */}
-        {isNavOpen && (
-          <Drawer
-            setIsNavOpen={setIsNavOpen}
-            handleNavToggle={handleNavToggle}
-          />
-        )}
+
+        <Sidebar isNavOpen={isNavOpen} setIsNavOpen={setIsNavOpen} />
       </div>
     </>
   );

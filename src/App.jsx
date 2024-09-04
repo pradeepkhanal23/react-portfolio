@@ -3,8 +3,6 @@ import { Navbar, Footer, TechStack } from "./components";
 import {
   Hero,
   About,
-  Skills,
-  Services,
   Qualifications,
   Contact,
   Portfolio,

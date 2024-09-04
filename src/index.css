@@ -32,11 +32,11 @@ body {
 }
 
 .sidebar {
-  @apply sm:hidden bg-white z-20 transition-transform ease-in-out duration-200 top-0 right-0 fixed w-full h-full translate-x-full py-1 px-6;
+  @apply sm:hidden bg-white  z-20 transition-transform ease-in-out duration-500 top-0 right-0  fixed w-full h-full translate-x-full py-1 px-6;
 }
 
 .show-sidebar {
-  @apply translate-x-0 ease-out;
+  @apply translate-x-0;
 }
 
 /* Custom utility css */

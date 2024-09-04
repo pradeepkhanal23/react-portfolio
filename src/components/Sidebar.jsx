@@ -9,15 +9,22 @@ const navlinksWithIcon = [
   { name: "contact", icon: FaPaperPlane },
 ];
 
-const Drawer = ({ setIsNavOpen }) => {
+const Sidebar = ({ setIsNavOpen, isNavOpen }) => {
   return (
     <>
-      <aside
-        className={`${setIsNavOpen ? "sidebar show-sidebar " : "sidebar"}`}
-      >
+      <aside className={`${isNavOpen ? "sidebar show-sidebar " : "sidebar"}`}>
+        <div className="absolute h-full w-full opacity-10 bg-sidebar -z-20 bg-center bg-cover bg-no-repeat "></div>
+        <div className="flex-shrink-0 pt-3 ">
+          <a
+            href="#"
+            className="flex text-3xl uppercase font-semibold brand-name"
+          >
+            Pradeep
+          </a>
+        </div>
         <div className="absolute right-0 top-0 ">
           <IoMdClose
-            className="cursor-pointer hover:text-blue-600 h-6 w-6 m-5"
+            className="cursor-pointer hover:text-blue-600 h-7 w-7 m-5"
             onClick={() => {
               setIsNavOpen(false);
             }}
@@ -46,4 +53,4 @@ const Drawer = ({ setIsNavOpen }) => {
     </>
   );
 };
-export default Drawer;
+export default Sidebar;

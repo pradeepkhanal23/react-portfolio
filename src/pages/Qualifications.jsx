@@ -51,14 +51,14 @@ const Qualifications = () => {
                 </div>
 
                 <div className="grow pt-0.5 pb-8 ">
-                  <h3 className="font-semibold text-gray-800  mb-1">
+                  <h3 className="font-semibold text-gray-800  mb-1 text-xl">
                     {item.title}
                   </h3>
                   <h4 className="text-sm text-gray-500  mb-1">{item.date}</h4>
-                  <h4 className="text-sm text-gray-600 font-semibold tracking-wide mb-1">
+                  <h4 className="text-sm text-gray-600 font-bold  mb-1">
                     {item.institution}
                   </h4>
-                  <p className="mt-1 text-sm text-gray-600 ">
+                  <p className="mt-1 text-sm text-gray-500 ">
                     {item.description}
                   </p>
                 </div>
