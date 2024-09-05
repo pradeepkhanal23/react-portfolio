@@ -31,6 +31,14 @@ body {
   animation: bubble-motion 10s infinite ease-in-out alternate;
 }
 
+.switch-container {
+  @apply inline-flex h-10 my-6  items-center justify-center rounded-lg  bg-gray-100 p-1 text-gray-500;
+}
+
+.switch {
+  @apply relative flex items-center justify-center whitespace-nowrap rounded-md px-8 py-1 text-base font-semibold  transition-all;
+}
+
 .sidebar {
   @apply sm:hidden bg-white  z-20 transition-transform ease-in-out duration-500 top-0 right-0  fixed w-full h-full translate-x-full py-1 px-6;
 }

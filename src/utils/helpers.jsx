@@ -229,7 +229,7 @@ export const projects = [
   {
     id: 2,
     title: "Reelscape",
-    category: ["React", "All", "Web", "Desktop"],
+    category: ["React", "All", "Web"],
     techStack: ["NextJS app route", "Tailwind CSS", "React", "Swiper JS"],
     imageUrl: ProjectImage5,
     demoLink: "https://reelscapev2.vercel.app/",
@@ -262,7 +262,7 @@ export const projects = [
   {
     id: 5,
     title: "Aqua Pro",
-    category: ["Desktop", "Web", "All"],
+    category: ["Web", "All"],
     techStack: ["Bootstrap5", "HTML", "CSS"],
     imageUrl: ProjectImage1,
     demoLink: "https://aqua-pro.netlify.app/",
@@ -273,7 +273,7 @@ export const projects = [
   {
     id: 6,
     title: "Qilo",
-    category: ["Desktop", "Web", "All"],
+    category: ["Web", "All"],
     techStack: ["OOP", "HTML", "JavaScript", "Bootstrap5"],
     imageUrl: ProjectImage2,
     demoLink: "https://qilo.netlify.app/",

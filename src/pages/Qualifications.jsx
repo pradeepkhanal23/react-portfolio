@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { qualifications } from "../utils/helpers";
-import { FaBriefcase, FaUniversity } from "react-icons/fa";
-import { Header } from "../components";
+import { ToggleSwitch, Header } from "../components/index";
 
 const Qualifications = () => {
   const [view, setView] = useState("education");
@@ -18,26 +17,7 @@ const Qualifications = () => {
         </div>
 
         <div className="text-center mb-10">
-          <button
-            onClick={() => handleToggle("education")}
-            className={`mx-2 inline-flex items-center gap-x-2 ${
-              view === "education"
-                ? "font-bold  transition-all"
-                : "font-lighter"
-            }`}
-          >
-            <FaUniversity className="text-xl" /> Education
-          </button>
-          <button
-            onClick={() => handleToggle("experience")}
-            className={`px-4 py-2 mx-2 inline-flex items-center gap-x-2 ${
-              view === "experience"
-                ? "font-bold  transition-all"
-                : "font-lighter"
-            }`}
-          >
-            <FaBriefcase className="text-xl" /> Experience
-          </button>
+          <ToggleSwitch options={view} onToggle={handleToggle} />
         </div>
 
         <div>

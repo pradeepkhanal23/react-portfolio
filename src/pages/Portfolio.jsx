@@ -23,22 +23,24 @@ const Portfolio = () => {
       <section id="portfolio" className="p-5">
         <div className=" mx-auto w-full max-w-7xl">
           <Header title="Portfolio" subtitle="My Recent Work" />
-          <div className="flex space-x-4 my-8  items-center justify-center">
-            {portfolioTags.map((tag, i) => {
-              return (
-                <button
-                  key={i}
-                  className={`font-medium px-4 py-1 transition-all ${
-                    activeCategory === tag
-                      ? "bg-black text-white "
-                      : " text-black"
-                  } rounded-md`}
-                  onClick={() => filterProjects(tag)}
-                >
-                  {tag}
-                </button>
-              );
-            })}
+          <div className="flex items-center justify-center">
+            <div className="switch-container">
+              {portfolioTags.map((tag, i) => {
+                return (
+                  <button
+                    key={i}
+                    className={`switch ${
+                      activeCategory === tag
+                        ? "bg-white text-gray-900 shadow-sm"
+                        : "text-gray-600 "
+                    }`}
+                    onClick={() => filterProjects(tag)}
+                  >
+                    {tag}
+                  </button>
+                );
+              })}
+            </div>
           </div>
           <div className="grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-8 mt-10">
             {filteredProjects.map((project) => (
