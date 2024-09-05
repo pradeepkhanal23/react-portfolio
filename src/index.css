@@ -36,7 +36,7 @@ body {
 }
 
 .switch {
-  @apply relative flex items-center justify-center whitespace-nowrap rounded-md px-8 py-1 text-base font-semibold  transition-all;
+  @apply relative flex items-center justify-center whitespace-nowrap rounded-md px-3 sm:px-6 md:px-8 py-1 text-base font-semibold  transition-all;
 }
 
 .sidebar {

@@ -2,11 +2,13 @@ import { useState } from "react";
 import { projects, portfolioTags } from "../utils/helpers";
 import { Header } from "../components/index";
 import { ProjectCard } from "../components/index";
+import { FaShapes, FaReact, FaGlobe, FaDesktop } from "react-icons/fa";
 
 const Portfolio = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [activeCategory, setActiveCategory] = useState("All");
 
+  // function to filter the project
   const filterProjects = (category) => {
     setActiveCategory(category);
     if (category === "All") {
@@ -15,6 +17,22 @@ const Portfolio = () => {
       setFilteredProjects(
         projects.filter((project) => project.category.includes(category))
       );
+    }
+  };
+
+  // Helper function to get the icon based on the active category
+  const getIconForCategory = (category) => {
+    switch (category) {
+      case "All":
+        return <FaShapes className="mr-2 h-5 w-5" />;
+      case "React":
+        return <FaReact className="mr-2 h-5 w-5" />;
+      case "Web":
+        return <FaGlobe className="mr-2 h-5 w-5" />;
+      case "Desktop":
+        return <FaDesktop className="mr-2 h-5 w-5" />;
+      default:
+        return null;
     }
   };
 
@@ -36,6 +54,8 @@ const Portfolio = () => {
                     }`}
                     onClick={() => filterProjects(tag)}
                   >
+                    {getIconForCategory(tag)}
+                    {/* Conditionally rendering the icon */}
                     {tag}
                   </button>
                 );

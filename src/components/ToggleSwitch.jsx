@@ -11,7 +11,7 @@ const ToggleSwitch = ({ options, onToggle }) => {
         }`}
         onClick={() => onToggle("education")}
       >
-        <FaUniversity className="mr-2" /> Education
+        <FaUniversity className="mr-2 h-5 w-5" /> Education
       </button>
       <button
         className={`switch ${
@@ -21,7 +21,7 @@ const ToggleSwitch = ({ options, onToggle }) => {
         }`}
         onClick={() => onToggle("experience")}
       >
-        <FaBriefcase className="mr-2" /> Experience
+        <FaBriefcase className="mr-2 h-5 w-5" /> Experience
       </button>
     </div>
   );
