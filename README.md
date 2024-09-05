@@ -4,7 +4,7 @@ Welcome to my portfolio! This project showcases my skills, experience, and recen
 
 ## Live Demo
 
-Live demo link is available [here.](https://pradeepkhanaltech.netlify.app/)
+Live demo link is available [here.](https://pradeepkhanal.tech/)
 
 ![Homepage](./src/assets/screenshots/hero.png)
 _Description: The hero page of my portfolio website._
@@ -12,14 +12,19 @@ _Description: The hero page of my portfolio website._
 ![About](./src/assets/screenshots/about.png)
 _Description: The about page of my portfolio website._
 
-![Homepage](./src/assets/screenshots/contact.png)
+![Qualifications](./src/assets/screenshots/qualifications.png)
+_Description: The qualifications page of my portfolio website._
+
+![Portfolio](./src/assets/screenshots/portfolio.png)
+_Description: The portfolio page of my portfolio website._
+
+![Contact](./src/assets/screenshots/contact.png)
 _Description: The contact page of my portfolio website._
 
 ## Features
 
 - Responsive Layout
 - Fixed Navigation
-- Pop-up modals
 - Tab panel
 - Contact Form
 

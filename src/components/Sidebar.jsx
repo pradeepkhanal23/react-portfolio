@@ -13,7 +13,7 @@ const Sidebar = ({ setIsNavOpen, isNavOpen }) => {
   return (
     <>
       <aside className={`${isNavOpen ? "sidebar show-sidebar " : "sidebar"}`}>
-        <div className="absolute h-full w-full opacity-10 bg-sidebar-pattern -z-20 bg-center bg-cover bg-no-repeat "></div>
+        <div className="absolute h-full w-full opacity-10 bg-sidebar-pattern -z-20 bg-center bg-fill bg-no-repeat "></div>
         <div className="flex-shrink-0 pt-3 ">
           <a
             href="#"
