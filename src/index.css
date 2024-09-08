@@ -4,7 +4,6 @@
 
 html {
   font-family: "Urbanist", "Figtree", sans-serif;
-  font-optical-sizing: auto;
   scroll-behavior: smooth;
 }
 
@@ -36,7 +35,7 @@ body {
 }
 
 .switch {
-  @apply relative flex items-center justify-center whitespace-nowrap rounded-md px-3 sm:px-6 md:px-8 py-1 text-base font-semibold  transition-all;
+  @apply relative flex items-center justify-center whitespace-nowrap rounded-md px-2 sm:px-6 md:px-8 lg:px-10 py-1 text-sm md:text-base font-semibold  transition-all;
 }
 
 .sidebar {
@@ -49,7 +48,7 @@ body {
 
 /* Custom utility css */
 .title {
-  @apply text-4xl md:text-6xl font-extrabold;
+  @apply text-4xl md:text-6xl  font-extrabold;
 }
 
 .subtitle {
@@ -65,7 +64,7 @@ body {
 }
 
 .para {
-  @apply text-[#545454] tracking-normal text-base;
+  @apply text-[#545454] tracking-normal text-lg lg:text-xl;
 }
 
 /* Navbar section */
@@ -87,11 +86,15 @@ body {
   @apply text-lg;
 }
 
+.tech-logo {
+  @apply h-10 w-10 lg:w-12 lg:h-12;
+}
+
 /* Hero Section */
 
-.hero-section {
+/* .hero-section {
   @apply p-5 md:p-10  mx-auto max-w-7xl mt-[4rem] md:mt-[8rem]  md:gap-x-10 items-center md:items-start  flex flex-col justify-center md:justify-center  md:flex-row;
-}
+} */
 
 .hero-text {
   @apply flex flex-col items-center md:items-start space-y-4 lg:w-1/2;
