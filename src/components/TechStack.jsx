@@ -50,7 +50,7 @@ const TechGroup = ({ tech }) => (
 
 const TechStack = () => {
   return (
-    <section className="flex flex-col items-center justify-center md:flex-row md:px-5 mx-auto container lg:mt-10">
+    <section className="flex flex-col items-center justify-center md:flex-row md:p-8 mx-auto container lg:mt-10">
       <h2 className="text-xl md:mb-0 font-semibold decoration-gray-300 text-nowrap decoration-2 underline underline-offset-8 md:no-underline md:border-r-2 border-gray-300 md:pr-5 md:mr-8">
         Tech Stack
       </h2>

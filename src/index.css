@@ -64,7 +64,7 @@ body {
 }
 
 .para {
-  @apply text-[#545454] tracking-normal text-lg lg:text-xl;
+  @apply text-[#545454] tracking-normal text-lg;
 }
 
 /* Navbar section */

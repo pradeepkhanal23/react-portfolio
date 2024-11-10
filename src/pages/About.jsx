@@ -42,15 +42,14 @@ const About = () => {
                 mindset.
               </p>
               <br />
-              <p className="para">
-                My main stack currently is React/Tailwind CSS in combination
-                with Node js, Express and Mongo DB.
-              </p>
             </div>
             <div className="about-resume-button-wrapper">
-              <a href={resume} download="Pradeep_Khanal_Frontend_Resume">
+              <a
+                href="https://docs.google.com/document/d/1hPsn2hJV382Cb0s8_QokRjoUmLm_NOyhrRuqHN3VXw0/edit?usp=sharing"
+                target="_blank"
+              >
                 <button className="btn">
-                  Download CV
+                  View Resume
                   <SlDocs className="text-xl" />
                 </button>
               </a>
