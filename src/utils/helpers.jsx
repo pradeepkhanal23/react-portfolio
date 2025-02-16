@@ -43,7 +43,7 @@ export const cards = [
     id: 1,
     icon: <FaAward />,
     title: "Experience",
-    info: "2+ Years",
+    info: "3+ Years",
   },
   {
     id: 2,
@@ -239,17 +239,6 @@ export const projects = [
   },
   {
     id: 3,
-    title: "React Dashboard",
-    category: ["React", "All", "Web", "Desktop"],
-    techStack: ["React", "MUI", "Nivo Charts"],
-    imageUrl: ProjectImage6,
-    demoLink: "https://mui-react-dashboard.vercel.app/",
-    githubLink: "https://github.com/pradeepkhanal23/react-dashboard",
-    projectDescription:
-      "A modern react dashboard made with enterprise level packages such as MUI data grids, material UI (MUI) and Nivo charts.",
-  },
-  {
-    id: 4,
     title: "Luxehome Ecommerce",
     category: ["React", "All", "Web", "Desktop"],
     techStack: ["React", "Netlify Serverless", "Tailwind CSS", "Context API"],
@@ -260,7 +249,7 @@ export const projects = [
       "LuxeHome Furniture is an ambitious ecommerce website project designed to offer a luxurious and seamless online shopping experience for furniture enthusiasts.",
   },
   {
-    id: 5,
+    id: 4,
     title: "Aqua Pro",
     category: ["Web", "All"],
     techStack: ["Bootstrap5", "HTML", "CSS"],
@@ -271,7 +260,7 @@ export const projects = [
       "Landing page for a plumbing service company.This project is part of my take home assignment.",
   },
   {
-    id: 6,
+    id: 5,
     title: "Qilo",
     category: ["Web", "All"],
     techStack: ["OOP", "HTML", "JavaScript", "Bootstrap5"],
@@ -282,7 +271,7 @@ export const projects = [
       "This application is designed to help users track their daily calorie intake and maintain a healthy lifestyle.",
   },
   {
-    id: 7,
+    id: 6,
     title: "Splitter",
     category: ["React", "All"],
     techStack: ["React", "CSS"],
@@ -293,7 +282,7 @@ export const projects = [
       "React app from frontend mentor challenge for splitting the bill and calculating the tips amoung the friends",
   },
   {
-    id: 8,
+    id: 7,
     title: "Weather Dashboard",
     category: ["Web", "Desktop", "All"],
     techStack: ["Bootstrap5", "HTML", "CSS"],

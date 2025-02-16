@@ -1,7 +1,7 @@
 import DisplayImage from "../assets/icons/developer.svg";
 import { SlDocs } from "react-icons/sl";
 import { cards } from "../utils/helpers";
-import resume from "../data/resume.pdf";
+
 import { Header } from "../components/index";
 
 const About = () => {

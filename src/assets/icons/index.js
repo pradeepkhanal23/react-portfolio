@@ -11,6 +11,9 @@ import react from "./react.svg";
 import redux from "./redux.svg";
 import tailwind from "./tailwindcss.svg";
 import sass from "./sass.svg";
+import nextjs from "./nextjs.svg";
+import typescript from "./typescript.svg";
+import shadcnUi from "./shadcn-ui.svg";
 
 export {
   html,
@@ -26,4 +29,7 @@ export {
   redux,
   tailwind,
   sass,
+  nextjs,
+  typescript,
+  shadcnUi,
 };
