@@ -41,7 +41,7 @@ const TechLogo = ({ src, alt }) => (
 );
 
 const TechGroup = ({ tech }) => (
-  <div className="flex flex-wrap items-center justify-center my-3 gap-6 md:gap-4">
+  <div className="flex flex-wrap items-center justify-center my-3 gap-3 md:gap-5 p-1">
     {tech.map((t) => (
       <TechLogo key={t.name} src={t.icon} alt={`${t.name} logo`} />
     ))}

@@ -10,7 +10,7 @@ const Hero = () => {
       <section className="flex flex-col items-center md:gap-x-8 md:justify-center h-full md:flex-row p-5 md:p-10 mx-auto max-w-7xl">
         {/* Hero Image Section */}
         <img
-          className="hero-image bubble-image rounded-full max-w-[200px] md:max-w-[250px] lg:max-w-[300px] mb-5 md:mb-0 animate-bubble"
+          className="hero-image bubble-image rounded-full max-w-[300px] md:max-w-[300px] lg:max-w-[340px] mb-5 md:mb-0 animate-bubble"
           src={ProfileImage}
           alt="Pradeep Khanal Profile Image"
         />
