@@ -3,6 +3,7 @@ import { projects, portfolioTags } from "../utils/helpers";
 import { Header } from "../components/index";
 import { ProjectCard } from "../components/index";
 import { FaShapes, FaReact, FaGlobe, FaDesktop } from "react-icons/fa";
+import { v4 as uuidv4 } from "uuid";
 
 const Portfolio = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -38,7 +39,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <section id="portfolio" className="p-5">
+      <section id="portfolio" className="p-5 scroll-mt-20">
         <div className=" mx-auto w-full max-w-7xl">
           <Header title="Portfolio" subtitle="My Recent Work" />
           <div className="flex items-center justify-center">
@@ -64,7 +65,7 @@ const Portfolio = () => {
           </div>
           <div className="grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 gap-8 mt-10">
             {filteredProjects.map((project) => (
-              <article key={project.id}>
+              <article key={uuidv4()}>
                 <ProjectCard {...project} />
               </article>
             ))}

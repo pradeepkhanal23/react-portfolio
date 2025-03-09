@@ -1,4 +1,5 @@
 import { FaGithub, FaTv } from "react-icons/fa";
+import { v4 as uuidv4 } from "uuid";
 
 const ProjectCard = ({
   title,
@@ -9,34 +10,41 @@ const ProjectCard = ({
   projectDescription,
 }) => {
   return (
-    <>
-      <div className="mx-auto max-w-sm   border bg-white shadow-lg">
-        <div className="h-64 w-full p-2">
-          <img
-            className="h-full w-full object-cover   border border-gray-100"
-            src={imageUrl}
-            alt={title}
-          />
+    <div className="mx-auto max-w-sm h-full flex flex-col border bg-white shadow-lg">
+      {/* Image */}
+      <div className="h-64 w-full p-2">
+        <img
+          className="h-full w-full object-cover border border-gray-100"
+          src={imageUrl}
+          alt={title}
+        />
+      </div>
+
+      {/* Content */}
+      <div className="flex-1 px-6 flex flex-col">
+        <h5 className="text-2xl font-bold mb-2">{title}</h5>
+
+        {/* Description with min height */}
+        <p className="mb-4 text-sm text-gray-600 min-h-[60px]">
+          {projectDescription}
+        </p>
+
+        {/* Tech Stack */}
+        <div className="mb-4 flex flex-wrap gap-2">
+          {techStack?.map((stack, i) => (
+            <span
+              key={i}
+              className="rounded-full bg-black text-white px-4 py-2 text-xs font-semibold"
+            >
+              {stack}
+            </span>
+          ))}
         </div>
 
-        <div className=" px-6">
-          <h5 className="text-2xl font-bold mb-2">{title}</h5>
-          <p className="mb-4 text-sm text-gray-600 ">{projectDescription}</p>
-          <div className="mb-4 flex flex-wrap gap-2">
-            {techStack &&
-              techStack.map((stack, i) => {
-                return (
-                  <span
-                    key={i}
-                    className="rounded-full bg-black text-white px-4 py-2 text-xs font-semibold"
-                  >
-                    {stack}
-                  </span>
-                );
-              })}
-          </div>
+        <div className="mt-auto">
           <hr />
-          <div className="flex items-center justify-between  p-2">
+          {/* Buttons */}
+          <div className="flex items-center justify-between p-2">
             <a
               href={githubLink}
               target="_blank"
@@ -56,7 +64,7 @@ const ProjectCard = ({
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default ProjectCard;

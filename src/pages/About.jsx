@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <section
-        className="p-5 mx-auto max-w-5xl flex flex-col items-center justi gap-y-5 "
+        className="p-5 mx-auto max-w-5xl flex flex-col items-center justi gap-y-5 scroll-mt-20"
         id="about"
       >
         <Header title="About Me" subtitle="My Introduction" />
