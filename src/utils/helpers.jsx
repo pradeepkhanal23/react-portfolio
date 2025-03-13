@@ -208,7 +208,7 @@ export const qualifications = {
 
 export const projects = [
   {
-    title: "PTEZilla Ebook Store",
+    title: "PTEZilla by Deep",
     category: ["Web", "Desktop", "All", "React"],
     techStack: [
       "Nextjs",
@@ -222,7 +222,7 @@ export const projects = [
     demoLink: "https://ptezilla.org/",
     githubLink: "https://github.com/pradeepkhanal23/ptezilla",
     projectDescription:
-      "This application is my first freelance project for a client who is a PTE instructor. This is his ultimate PTE guide ebook store.",
+      "This application is my first freelance project for a client who is a PTE instructor. This is his ultimate PTE guide website with useful resources, courses and also ebooks.",
   },
   {
     title: "Expense Tracker",
